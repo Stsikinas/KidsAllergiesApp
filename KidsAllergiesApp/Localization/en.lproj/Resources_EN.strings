@@ -1,0 +1,20 @@
+/* 
+  Resources_EN.strings
+  KidsAllergiesApp
+
+  Created by Epsilon User on 6/5/20.
+  Copyright © 2020 Stavros Team. All rights reserved.
+*/
+
+
+// MARK: Strings related to Welcome Screen
+"title_1" = "EXCITING TIPS";
+"desc_1" = "Get tips, based on the allergies that your kid may have.";
+"title_2" = "SHARE YOUR EXPERIENCE";
+"desc_2" = "Help our community, by sharing your own experience.";
+"title_3" = "FOOD RECIPES FOR ALL TYPES OF ALLERGIES";
+"desc_3" = "Get all sorts of recipes that suit you better.";
+
+// MARK: Strings related to LoginScreen
+"login_failed" = "Login Failed";
+"login_failed_msg" = "Login Failed! Check your credentials";

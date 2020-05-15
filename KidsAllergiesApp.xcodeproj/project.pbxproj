@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46420122246D780500A304C6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420121246D780500A304C6 /* TextUtils.swift */; };
+		46420124246D7E9600A304C6 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* UIKitExtensions.swift */; };
+		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
+		46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */; };
+		46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */; };
+		46CCDF9424602FF50052B3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDF9324602FF50052B3E3 /* Assets.xcassets */; };
+		46CCDF9724602FF50052B3E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDF9524602FF50052B3E3 /* LaunchScreen.storyboard */; };
+		46CCDFA224602FF60052B3E3 /* KidsAllergiesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFA124602FF60052B3E3 /* KidsAllergiesAppTests.swift */; };
+		46CCDFAD24602FF60052B3E3 /* KidsAllergiesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFAC24602FF60052B3E3 /* KidsAllergiesAppUITests.swift */; };
+		46CCDFC0246035D10052B3E3 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDFBF246035D10052B3E3 /* Welcome.storyboard */; };
+		46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC224604F650052B3E3 /* AccountHelper.swift */; };
+		46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC42460530B0052B3E3 /* MainViewController.swift */; };
+		46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */; };
+		46DBBA142462D88200520115 /* Resources_EN.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DBBA162462D88200520115 /* Resources_EN.strings */; };
+		46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46CCDF9E24602FF60052B3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46CCDF7F24602FF40052B3E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46CCDF8624602FF40052B3E3;
+			remoteInfo = KidsAllergiesApp;
+		};
+		46CCDFA924602FF60052B3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46CCDF7F24602FF40052B3E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46CCDF8624602FF40052B3E3;
+			remoteInfo = KidsAllergiesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46420121246D780500A304C6 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
+		46420123246D7E9600A304C6 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46CCDF8724602FF40052B3E3 /* Kids Allergies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Allergies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46CCDF9324602FF50052B3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46CCDF9624602FF50052B3E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46CCDF9824602FF50052B3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CCDF9D24602FF60052B3E3 /* KidsAllergiesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsAllergiesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CCDFA124602FF60052B3E3 /* KidsAllergiesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsAllergiesAppTests.swift; sourceTree = "<group>"; };
+		46CCDFA324602FF60052B3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CCDFA824602FF60052B3E3 /* KidsAllergiesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsAllergiesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CCDFAC24602FF60052B3E3 /* KidsAllergiesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsAllergiesAppUITests.swift; sourceTree = "<group>"; };
+		46CCDFAE24602FF60052B3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CCDFBF246035D10052B3E3 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		46CCDFC224604F650052B3E3 /* AccountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
+		46CCDFC42460530B0052B3E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		46DBBA152462D88200520115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Resources_EN.strings; sourceTree = "<group>"; };
+		46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46CCDF8424602FF40052B3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CCDF9A24602FF60052B3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CCDFA524602FF60052B3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46CCDF7E24602FF40052B3E3 = {
+			isa = PBXGroup;
+			children = (
+				46CCDF8924602FF40052B3E3 /* KidsAllergiesApp */,
+				46CCDFA024602FF60052B3E3 /* KidsAllergiesAppTests */,
+				46CCDFAB24602FF60052B3E3 /* KidsAllergiesAppUITests */,
+				46CCDF8824602FF40052B3E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46CCDF8824602FF40052B3E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46CCDF8724602FF40052B3E3 /* Kids Allergies.app */,
+				46CCDF9D24602FF60052B3E3 /* KidsAllergiesAppTests.xctest */,
+				46CCDFA824602FF60052B3E3 /* KidsAllergiesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46CCDF8924602FF40052B3E3 /* KidsAllergiesApp */ = {
+			isa = PBXGroup;
+			children = (
+				46DBBA172462D8EB00520115 /* Localization */,
+				46CCDF9824602FF50052B3E3 /* Info.plist */,
+				46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */,
+				46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */,
+				46CCDF9324602FF50052B3E3 /* Assets.xcassets */,
+				46CCDFC124604F500052B3E3 /* Helpers */,
+				46CCDF9524602FF50052B3E3 /* LaunchScreen.storyboard */,
+				46CCDFBE246032B70052B3E3 /* Models */,
+				46CCDFBD2460329F0052B3E3 /* Storyboards */,
+				46CCDFBA2460328B0052B3E3 /* View Controllers */,
+				46CCDFBB246032930052B3E3 /* View Models */,
+				46CCDFBC2460329A0052B3E3 /* Views */,
+			);
+			path = KidsAllergiesApp;
+			sourceTree = "<group>";
+		};
+		46CCDFA024602FF60052B3E3 /* KidsAllergiesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				46CCDFA124602FF60052B3E3 /* KidsAllergiesAppTests.swift */,
+				46CCDFA324602FF60052B3E3 /* Info.plist */,
+			);
+			path = KidsAllergiesAppTests;
+			sourceTree = "<group>";
+		};
+		46CCDFAB24602FF60052B3E3 /* KidsAllergiesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46CCDFAC24602FF60052B3E3 /* KidsAllergiesAppUITests.swift */,
+				46CCDFAE24602FF60052B3E3 /* Info.plist */,
+				46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */,
+			);
+			path = KidsAllergiesAppUITests;
+			sourceTree = "<group>";
+		};
+		46CCDFBA2460328B0052B3E3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46CCDFC42460530B0052B3E3 /* MainViewController.swift */,
+				46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */,
+				465C5DBE24659FA5000C24D6 /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		46CCDFBB246032930052B3E3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		46CCDFBC2460329A0052B3E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46CCDFBD2460329F0052B3E3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				46CCDFBF246035D10052B3E3 /* Welcome.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		46CCDFBE246032B70052B3E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46CCDFC124604F500052B3E3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46CCDFC224604F650052B3E3 /* AccountHelper.swift */,
+				46420121246D780500A304C6 /* TextUtils.swift */,
+				46420123246D7E9600A304C6 /* UIKitExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46DBBA172462D8EB00520115 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				46DBBA162462D88200520115 /* Resources_EN.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46CCDF8624602FF40052B3E3 /* KidsAllergiesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CCDFB124602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesApp" */;
+			buildPhases = (
+				46CCDF8324602FF40052B3E3 /* Sources */,
+				46CCDF8424602FF40052B3E3 /* Frameworks */,
+				46CCDF8524602FF40052B3E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidsAllergiesApp;
+			productName = KidsAllergiesApp;
+			productReference = 46CCDF8724602FF40052B3E3 /* Kids Allergies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46CCDF9C24602FF60052B3E3 /* KidsAllergiesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CCDFB424602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesAppTests" */;
+			buildPhases = (
+				46CCDF9924602FF60052B3E3 /* Sources */,
+				46CCDF9A24602FF60052B3E3 /* Frameworks */,
+				46CCDF9B24602FF60052B3E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46CCDF9F24602FF60052B3E3 /* PBXTargetDependency */,
+			);
+			name = KidsAllergiesAppTests;
+			productName = KidsAllergiesAppTests;
+			productReference = 46CCDF9D24602FF60052B3E3 /* KidsAllergiesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46CCDFA724602FF60052B3E3 /* KidsAllergiesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CCDFB724602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesAppUITests" */;
+			buildPhases = (
+				46CCDFA424602FF60052B3E3 /* Sources */,
+				46CCDFA524602FF60052B3E3 /* Frameworks */,
+				46CCDFA624602FF60052B3E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46CCDFAA24602FF60052B3E3 /* PBXTargetDependency */,
+			);
+			name = KidsAllergiesAppUITests;
+			productName = KidsAllergiesAppUITests;
+			productReference = 46CCDFA824602FF60052B3E3 /* KidsAllergiesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46CCDF7F24602FF40052B3E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Stavros Team";
+				TargetAttributes = {
+					46CCDF8624602FF40052B3E3 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					46CCDF9C24602FF60052B3E3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 46CCDF8624602FF40052B3E3;
+					};
+					46CCDFA724602FF60052B3E3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 46CCDF8624602FF40052B3E3;
+					};
+				};
+			};
+			buildConfigurationList = 46CCDF8224602FF40052B3E3 /* Build configuration list for PBXProject "KidsAllergiesApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46CCDF7E24602FF40052B3E3;
+			productRefGroup = 46CCDF8824602FF40052B3E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46CCDF8624602FF40052B3E3 /* KidsAllergiesApp */,
+				46CCDF9C24602FF60052B3E3 /* KidsAllergiesAppTests */,
+				46CCDFA724602FF60052B3E3 /* KidsAllergiesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46CCDF8524602FF40052B3E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CCDFC0246035D10052B3E3 /* Welcome.storyboard in Resources */,
+				46DBBA142462D88200520115 /* Resources_EN.strings in Resources */,
+				46CCDF9724602FF50052B3E3 /* LaunchScreen.storyboard in Resources */,
+				46CCDF9424602FF50052B3E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CCDF9B24602FF60052B3E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CCDFA624602FF60052B3E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46CCDF8324602FF40052B3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */,
+				46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */,
+				46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */,
+				46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */,
+				46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */,
+				46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */,
+				46420124246D7E9600A304C6 /* UIKitExtensions.swift in Sources */,
+				46420122246D780500A304C6 /* TextUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CCDF9924602FF60052B3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CCDFA224602FF60052B3E3 /* KidsAllergiesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CCDFA424602FF60052B3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */,
+				46CCDFAD24602FF60052B3E3 /* KidsAllergiesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46CCDF9F24602FF60052B3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46CCDF8624602FF40052B3E3 /* KidsAllergiesApp */;
+			targetProxy = 46CCDF9E24602FF60052B3E3 /* PBXContainerItemProxy */;
+		};
+		46CCDFAA24602FF60052B3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46CCDF8624602FF40052B3E3 /* KidsAllergiesApp */;
+			targetProxy = 46CCDFA924602FF60052B3E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46CCDF9524602FF50052B3E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46CCDF9624602FF50052B3E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		46DBBA162462D88200520115 /* Resources_EN.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DBBA152462D88200520115 /* en */,
+			);
+			name = Resources_EN.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46CCDFAF24602FF60052B3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46CCDFB024602FF60052B3E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46CCDFB224602FF60052B3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS7VD55S5;
+				INFOPLIST_FILE = KidsAllergiesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.apps.KidsAllergiesApp;
+				PRODUCT_NAME = "Kids Allergies";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46CCDFB324602FF60052B3E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS7VD55S5;
+				INFOPLIST_FILE = KidsAllergiesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.apps.KidsAllergiesApp;
+				PRODUCT_NAME = "Kids Allergies";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46CCDFB524602FF60052B3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS7VD55S5;
+				INFOPLIST_FILE = KidsAllergiesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.apps.KidsAllergiesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids Allergies.app/Kids Allergies";
+			};
+			name = Debug;
+		};
+		46CCDFB624602FF60052B3E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS7VD55S5;
+				INFOPLIST_FILE = KidsAllergiesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.apps.KidsAllergiesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids Allergies.app/Kids Allergies";
+			};
+			name = Release;
+		};
+		46CCDFB824602FF60052B3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS7VD55S5;
+				INFOPLIST_FILE = KidsAllergiesAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.apps.KidsAllergiesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KidsAllergiesApp;
+			};
+			name = Debug;
+		};
+		46CCDFB924602FF60052B3E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS7VD55S5;
+				INFOPLIST_FILE = KidsAllergiesAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.apps.KidsAllergiesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KidsAllergiesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46CCDF8224602FF40052B3E3 /* Build configuration list for PBXProject "KidsAllergiesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CCDFAF24602FF60052B3E3 /* Debug */,
+				46CCDFB024602FF60052B3E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CCDFB124602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CCDFB224602FF60052B3E3 /* Debug */,
+				46CCDFB324602FF60052B3E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CCDFB424602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CCDFB524602FF60052B3E3 /* Debug */,
+				46CCDFB624602FF60052B3E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CCDFB724602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CCDFB824602FF60052B3E3 /* Debug */,
+				46CCDFB924602FF60052B3E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46CCDF7F24602FF40052B3E3 /* Project object */;
+}
