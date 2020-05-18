@@ -25,6 +25,12 @@ class MainViewController: UIViewController {
             let vc = storyboard?.instantiateViewController(withIdentifier: "welcome") as! WelcomeViewController
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
+        } else {
+            let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+            guard let initialHome = homeStoryboard.instantiateInitialViewController() else {
+                return
+            }
+            present(initialHome, animated: true, completion: nil)
         }
         
     }

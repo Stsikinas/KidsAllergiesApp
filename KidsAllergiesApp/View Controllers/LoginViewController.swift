@@ -28,6 +28,18 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        AppUtility.lockOrientation(.portrait)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        AppUtility.lockOrientation(.all)
+    }
+    
     // MARK: UI Functions
     
     private func configureView() {
@@ -62,6 +74,12 @@ class LoginViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         if (usernameTextField.text == "test" && passwordTextField.text == "12345") {
             debugPrint("Login succeeded!")
+            let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+            guard let initialHome = homeStoryboard.instantiateInitialViewController() else {
+                return
+            }
+            AccountHelper.shared.setNewUser()
+            present(initialHome, animated: true, completion: nil)
         } else {
             showNoActionAlert(NSLocalizedString("login_failed", tableName: "Resources_EN", comment: ""),
                               message: NSLocalizedString("login_failed_msg", tableName: "Resources_EN", comment: ""))

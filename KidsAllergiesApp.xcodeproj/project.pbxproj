@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C34B1B6C54613AA819B3AAF /* libPods-KidsAllergiesAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E7F036EFEB878232DB80CF /* libPods-KidsAllergiesAppUITests.a */; };
+		291485E370C71372937FD649 /* Pods_KidsAllergiesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */; };
 		46420122246D780500A304C6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420121246D780500A304C6 /* TextUtils.swift */; };
 		46420124246D7E9600A304C6 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* UIKitExtensions.swift */; };
+		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
 		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
+		46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C8BCED246EAFD6006E42F4 /* Home.storyboard */; };
 		46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */; };
 		46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */; };
 		46CCDF9424602FF50052B3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDF9324602FF50052B3E3 /* Assets.xcassets */; };
@@ -22,7 +26,7 @@
 		46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */; };
 		46DBBA142462D88200520115 /* Resources_EN.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DBBA162462D88200520115 /* Resources_EN.strings */; };
 		46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */; };
-		81C620D03873C7BB2D6C1DFE /* libPods-KidsAllergiesApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE51224CFFB64C258E71970 /* libPods-KidsAllergiesApp.a */; };
+		EC6F7B73ABC221E18A013EE1 /* Pods_KidsAllergiesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0259092CD252409FB3C0A946 /* Pods_KidsAllergiesApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0259092CD252409FB3C0A946 /* Pods_KidsAllergiesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsAllergiesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F4B5FE3F4473C8531909DD /* Pods-KidsAllergiesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesApp.debug.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsAllergiesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46420121246D780500A304C6 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
 		46420123246D7E9600A304C6 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46C8BCED246EAFD6006E42F4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		46CCDF8724602FF40052B3E3 /* Kids Allergies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Allergies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +73,12 @@
 		46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46DBBA152462D88200520115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Resources_EN.strings; sourceTree = "<group>"; };
 		46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
-		CEE51224CFFB64C258E71970 /* libPods-KidsAllergiesApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KidsAllergiesApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C7135BE3871AF823450EBC /* Pods-KidsAllergiesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesAppTests.release.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesAppTests/Pods-KidsAllergiesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F976739127CD51F8427383F /* Pods-KidsAllergiesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesAppUITests/Pods-KidsAllergiesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE4B9A1A5322C1C66B05F0B9 /* Pods-KidsAllergiesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesAppUITests/Pods-KidsAllergiesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8C97310ACD87F926C2AED1F /* Pods-KidsAllergiesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesAppTests/Pods-KidsAllergiesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC403201239167F4A228C34F /* Pods-KidsAllergiesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesApp.release.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp.release.xcconfig"; sourceTree = "<group>"; };
+		F5E7F036EFEB878232DB80CF /* libPods-KidsAllergiesAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KidsAllergiesAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C620D03873C7BB2D6C1DFE /* libPods-KidsAllergiesApp.a in Frameworks */,
+				EC6F7B73ABC221E18A013EE1 /* Pods_KidsAllergiesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291485E370C71372937FD649 /* Pods_KidsAllergiesAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C34B1B6C54613AA819B3AAF /* libPods-KidsAllergiesAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +114,11 @@
 			children = (
 				33F4B5FE3F4473C8531909DD /* Pods-KidsAllergiesApp.debug.xcconfig */,
 				DC403201239167F4A228C34F /* Pods-KidsAllergiesApp.release.xcconfig */,
+				D8C97310ACD87F926C2AED1F /* Pods-KidsAllergiesAppTests.debug.xcconfig */,
+				73C7135BE3871AF823450EBC /* Pods-KidsAllergiesAppTests.release.xcconfig */,
+				CE4B9A1A5322C1C66B05F0B9 /* Pods-KidsAllergiesAppUITests.debug.xcconfig */,
+				7F976739127CD51F8427383F /* Pods-KidsAllergiesAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -193,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				46CCDFBF246035D10052B3E3 /* Welcome.storyboard */,
+				46C8BCED246EAFD6006E42F4 /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -210,6 +228,7 @@
 				46CCDFC224604F650052B3E3 /* AccountHelper.swift */,
 				46420121246D780500A304C6 /* TextUtils.swift */,
 				46420123246D7E9600A304C6 /* UIKitExtensions.swift */,
+				4650AFE024727C8F00E95010 /* AppUtility.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,7 +244,9 @@
 		4AF954511015A2B66A4F1A0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEE51224CFFB64C258E71970 /* libPods-KidsAllergiesApp.a */,
+				0259092CD252409FB3C0A946 /* Pods_KidsAllergiesApp.framework */,
+				3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */,
+				F5E7F036EFEB878232DB80CF /* libPods-KidsAllergiesAppUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,6 +262,7 @@
 				46CCDF8324602FF40052B3E3 /* Sources */,
 				46CCDF8424602FF40052B3E3 /* Frameworks */,
 				46CCDF8524602FF40052B3E3 /* Resources */,
+				73B9DC60900E3F98E4C31BD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46CCDFB424602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesAppTests" */;
 			buildPhases = (
+				499B9073DF91100077A274D1 /* [CP] Check Pods Manifest.lock */,
 				46CCDF9924602FF60052B3E3 /* Sources */,
 				46CCDF9A24602FF60052B3E3 /* Frameworks */,
 				46CCDF9B24602FF60052B3E3 /* Resources */,
+				4C1A23D0177077AD7D56139A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46CCDFB724602FF60052B3E3 /* Build configuration list for PBXNativeTarget "KidsAllergiesAppUITests" */;
 			buildPhases = (
+				FD521FE633F9D1450C2EB97A /* [CP] Check Pods Manifest.lock */,
 				46CCDFA424602FF60052B3E3 /* Sources */,
 				46CCDFA524602FF60052B3E3 /* Frameworks */,
 				46CCDFA624602FF60052B3E3 /* Resources */,
@@ -336,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46CCDFC0246035D10052B3E3 /* Welcome.storyboard in Resources */,
+				46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */,
 				46DBBA142462D88200520115 /* Resources_EN.strings in Resources */,
 				46CCDF9724602FF50052B3E3 /* LaunchScreen.storyboard in Resources */,
 				46CCDF9424602FF50052B3E3 /* Assets.xcassets in Resources */,
@@ -359,6 +385,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		499B9073DF91100077A274D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KidsAllergiesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C1A23D0177077AD7D56139A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KidsAllergiesAppTests/Pods-KidsAllergiesAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KidsAllergiesAppTests/Pods-KidsAllergiesAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KidsAllergiesAppTests/Pods-KidsAllergiesAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73B9DC60900E3F98E4C31BD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A63E3C3CBFDA8632359CE8D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,6 +463,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD521FE633F9D1450C2EB97A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KidsAllergiesAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -390,6 +494,7 @@
 			files = (
 				465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */,
 				46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */,
+				4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */,
 				46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */,
 				46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */,
 				46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */,
@@ -607,6 +712,7 @@
 		};
 		46CCDFB524602FF60052B3E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C97310ACD87F926C2AED1F /* Pods-KidsAllergiesAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -629,6 +735,7 @@
 		};
 		46CCDFB624602FF60052B3E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C7135BE3871AF823450EBC /* Pods-KidsAllergiesAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -651,6 +758,7 @@
 		};
 		46CCDFB824602FF60052B3E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4B9A1A5322C1C66B05F0B9 /* Pods-KidsAllergiesAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +780,7 @@
 		};
 		46CCDFB924602FF60052B3E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F976739127CD51F8427383F /* Pods-KidsAllergiesAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

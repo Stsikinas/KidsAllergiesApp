@@ -19,11 +19,19 @@ class WelcomeViewController: UIViewController {
     //MARK: Private Variables
     
     
+    // MARK: Overriden Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureView()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        AppUtility.lockOrientation(.portrait)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,6 +58,12 @@ class WelcomeViewController: UIViewController {
                 })
         })
 
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        AppUtility.lockOrientation(.all)
     }
     
     private func configureView() {
