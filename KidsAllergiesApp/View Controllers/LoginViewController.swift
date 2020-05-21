@@ -15,8 +15,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var newUserBtn: UIButton!
-    // MARK: Private Variables
-    private var loginColor = UIColor(red: 0, green: 0.675, blue: 0.290, alpha: 1.0)
     
     // MARK: Overriden Methods
     
@@ -45,10 +43,7 @@ class LoginViewController: UIViewController {
     private func configureView() {
         
         // Make login button round and nice
-        loginBtn.layer.cornerRadius = loginBtn.frame.height/2
-        loginBtn.clipsToBounds = true
-        loginBtn.isEnabled = false
-        loginBtn.backgroundColor = loginColor.withAlphaComponent(0.5)
+        loginBtn.makeOvalBtn(AppUtility().primaryColor, withAlpha: 0.5)
         
         // Add toggle-eye in password to show/hide
         passwordTextField.rightViewMode = .unlessEditing
@@ -86,6 +81,10 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func registerAction(_ sender: Any) {
+        performSegue(withIdentifier: "registerUser", sender: self)
+    }
+    
     
     // MARK: Obj-C Functions
     
@@ -93,10 +92,10 @@ class LoginViewController: UIViewController {
         
         if TextUtils.shared.trim(usernameTextField.text).isEmpty || TextUtils.shared.trim(passwordTextField.text).isEmpty {
             loginBtn.isEnabled = false
-            loginBtn.backgroundColor = loginColor.withAlphaComponent(0.5)
+            loginBtn.backgroundColor = AppUtility().primaryColor.withAlphaComponent(0.5)
         } else {
             loginBtn.isEnabled = true
-            loginBtn.backgroundColor = loginColor
+            loginBtn.backgroundColor = AppUtility().primaryColor
         }
         
     }

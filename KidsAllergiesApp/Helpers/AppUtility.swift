@@ -17,5 +17,7 @@ struct AppUtility {
         }
     }
     
+    public let primaryColor = UIColor(red: 0, green: 0.675, blue: 0.290, alpha: 1.0)
+    
     
 }

@@ -68,8 +68,7 @@ class WelcomeViewController: UIViewController {
     
     private func configureView() {
         
-        getStartedBtn.layer.cornerRadius = getStartedBtn.frame.height/2
-        getStartedBtn.clipsToBounds = true
+        getStartedBtn.makeOvalBtn(.white, withAlpha: 1.0)
         
         titleLabel.text = NSLocalizedString("title_1", tableName: "Resources_EN", comment: "")
         descriptionLabel.text = NSLocalizedString("desc_1", tableName: "Resources_EN", comment: "")

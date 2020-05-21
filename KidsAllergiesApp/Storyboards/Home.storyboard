@@ -14,7 +14,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8py-9D-0XS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="evw-6N-kmh" kind="relationship" relationship="viewControllers" id="HdG-88-Tuz"/>
@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-528" y="-163"/>
         </scene>
-        <!--Item-->
+        <!--Community-->
         <scene sceneID="26Y-vy-Buf">
             <objects>
                 <tableViewController id="ODI-VM-rEe" sceneMemberID="viewController">
@@ -49,13 +49,13 @@
                             <outlet property="delegate" destination="ODI-VM-rEe" id="AcM-fP-cmO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ClE-dU-zf5"/>
+                    <tabBarItem key="tabBarItem" title="Community" image="chat_bar" id="ClE-dU-zf5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jln-9p-Zyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="529" y="63"/>
         </scene>
-        <!--Item-->
+        <!--Recipes-->
         <scene sceneID="Em3-Rh-IgO">
             <objects>
                 <tableViewController id="OO7-jo-lHw" sceneMemberID="viewController">
@@ -78,13 +78,13 @@
                             <outlet property="delegate" destination="OO7-jo-lHw" id="Umu-Dk-8Xh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ty0-Wd-Jkw"/>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="recipes_bar" id="ty0-Wd-Jkw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zl-ZE-hbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="779"/>
+            <point key="canvasLocation" x="529" y="799"/>
         </scene>
-        <!--Item-->
+        <!--Tips-->
         <scene sceneID="D82-6L-OA4">
             <objects>
                 <tableViewController id="evw-6N-kmh" sceneMemberID="viewController">
@@ -107,11 +107,16 @@
                             <outlet property="delegate" destination="evw-6N-kmh" id="S7X-ne-CHc"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="vhr-ep-5PO"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="tips_bar" id="vhr-ep-5PO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EO-Lg-0Oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="529" y="-669"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chat_bar" width="24" height="24"/>
+        <image name="recipes_bar" width="24" height="24"/>
+        <image name="tips_bar" width="24" height="24"/>
+    </resources>
 </document>

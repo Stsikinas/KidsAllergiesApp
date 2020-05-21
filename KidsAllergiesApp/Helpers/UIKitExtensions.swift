@@ -18,3 +18,18 @@ public extension UIViewController {
     }
     
 }
+
+public extension UIButton {
+    
+    func makeOvalBtn(_ withColor: UIColor, withAlpha: CGFloat) {
+        layer.cornerRadius = frame.height/2
+        clipsToBounds = true
+        if withAlpha < 1 {
+            isEnabled = false
+        } else {
+            isEnabled = true
+        }
+        backgroundColor = withColor.withAlphaComponent(withAlpha)
+    }
+    
+}
