@@ -106,22 +106,22 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="job-kz-fg2">
                                 <rect key="frame" x="47" y="190" width="281" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZS-nZ-d9w">
                                 <rect key="frame" x="47" y="249" width="281" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LfW-3e-Pm3">
                                 <rect key="frame" x="47" y="308" width="281" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hM6-5J-kAM">
                                 <rect key="frame" x="47" y="367" width="281" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWF-Cj-OeE">
                                 <rect key="frame" x="47" y="512" width="281" height="55"/>
@@ -136,6 +136,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="X7K-Uy-uKj" eventType="touchUpInside" id="U9y-Tj-xl5"/>
+                                    <action selector="registerPressedBtn:" destination="3VO-7Y-Mfr" eventType="touchUpInside" id="6xS-FF-jo8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6o-bO-tmc">
@@ -175,7 +176,11 @@
                     <navigationItem key="navigationItem" id="MPs-02-HNR"/>
                     <connections>
                         <outlet property="backBtn" destination="j6o-bO-tmc" id="07k-Vc-jy3"/>
+                        <outlet property="firstNameTextField" destination="job-kz-fg2" id="rXw-I5-riZ"/>
+                        <outlet property="lastnameTextField" destination="oZS-nZ-d9w" id="g5K-Jy-ZLf"/>
+                        <outlet property="passwordTextField" destination="hM6-5J-kAM" id="JN6-dA-P9w"/>
                         <outlet property="registerBtn" destination="HWF-Cj-OeE" id="BrI-9x-EuB"/>
+                        <outlet property="usernameTextField" destination="LfW-3e-Pm3" id="fPW-9Z-OIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILp-dY-RdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -197,7 +202,7 @@
                                 <rect key="frame" x="47" y="245" width="281" height="34"/>
                                 <accessibility key="accessibilityConfiguration" identifier="userTextField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="username"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YF-lJ-4Cw">
                                 <rect key="frame" x="47" y="378" width="281" height="55"/>

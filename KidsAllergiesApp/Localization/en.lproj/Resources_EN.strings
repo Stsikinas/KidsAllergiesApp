@@ -15,6 +15,10 @@
 "title_3" = "FOOD RECIPES FOR ALL TYPES OF ALLERGIES";
 "desc_3" = "Get all sorts of recipes that suit you better.";
 
-// MARK: Strings related to LoginScreen
+// MARK: Strings related to Login Screen
 "login_failed" = "Login Failed";
-"login_failed_msg" = "Login Failed! Check your credentials";
+"login_failed_msg" = "Login attempt failed.";
+
+// MARK: String related to Register Screen
+"register_failed" = "Register Failed";
+"invalid_email" = "This email address is not valid.\nChoose different address.";

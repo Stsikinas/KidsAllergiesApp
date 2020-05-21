@@ -46,16 +46,8 @@ class LoginViewController: UIViewController {
         loginBtn.makeOvalBtn(AppUtility().primaryColor, withAlpha: 0.5)
         
         // Add toggle-eye in password to show/hide
-        passwordTextField.rightViewMode = .unlessEditing
-        let toggleButton = UIButton(frame: CGRect(x: passwordTextField.frame.size.width - 25, y: 5, width: 15, height: 25))
-        toggleButton.setImage(UIImage(named: "hide_pass"), for: .normal)
-        toggleButton.imageEdgeInsets = UIEdgeInsets(top: 5, left: -24, bottom: 5, right: 15)
-        toggleButton.addTarget(self, action: #selector(togglePassword), for: .touchUpInside)
-        toggleButton.accessibilityIdentifier = "toggleButton"
-        passwordTextField.rightView = toggleButton
-        passwordTextField.rightViewMode = .always
-        passwordTextField.isSecureTextEntry = true
-        
+        let passwordToggle = passwordTextField.addToggle(UIImage(named: "hide_pass")!)
+        passwordToggle.addTarget(self, action: #selector(togglePassword), for: .touchUpInside)
     }
     
     private func setupTextFields() {
