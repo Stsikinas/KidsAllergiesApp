@@ -55,6 +55,7 @@ class RegisterViewController: UIViewController {
         [firstNameTextField, lastnameTextField, usernameTextField, passwordTextField].forEach({
             $0.addTarget(self, action: #selector(checkRegisterBtn), for: .editingChanged)
         })
+        passwordTextField.passwordRules = AppUtility.createPasswordRules()
     }
     
     // MARK: UI Actions
@@ -64,12 +65,15 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressedBtn(_ sender: Any) {
-        guard let passText = usernameTextField.text else {
+        guard let userText = usernameTextField.text, let passText = passwordTextField.text else {
             return
         }
-        if !passText.isEmailValid() {
+        if !userText.isEmailValid() {
             showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
                               message: NSLocalizedString("invalid_email", tableName: "Resources_EN", comment: ""))
+        } else if !AppUtility.isValid(passText, forRules: AppUtility.passRules) {
+            showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
+                              message: NSLocalizedString("invalid_password", tableName: "Resources_EN", comment: ""))
         }
     }
     

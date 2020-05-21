@@ -30,5 +30,13 @@ class KidsAllergiesAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testValidPassword() throws {
+        XCTAssertTrue(AppUtility.isValid("Mmiler#13", forRules: "required: lower; required: upper; required: digit; minlength: 8;"))
+    }
+    
+    func testValidEmail() throws {
+        XCTAssert("s.tsikinas@gmail.com".isEmailValid())
+    }
 
 }
