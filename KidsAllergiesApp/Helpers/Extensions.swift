@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: UIKit Extensions
 
-public extension UIViewController {
+extension UIViewController: UITextFieldDelegate {
     
     func showNoActionAlert(_ withTitle: String, message: String) {
         let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
@@ -19,7 +19,33 @@ public extension UIViewController {
         present(alert, animated: false, completion: nil)
     }
     
+    func addDoneToolbar(forTextField: UITextField) {
+        let toolbar = UIToolbar()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneClicked))
+        doneButton.accessibilityIdentifier = "doneToolbar"
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .done, target: self, action: #selector(cancelClicked))
+        cancelButton.accessibilityIdentifier = "cancelToolbar"
+        toolbar.setItems([cancelButton, flexibleSpace, doneButton], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        toolbar.sizeToFit()
+        
+        forTextField.delegate = self
+        forTextField.inputAccessoryView = toolbar
+        
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    
+    @objc func cancelClicked() {
+        view.endEditing(true)
+    }
+    
 }
+
 
 public extension UIButton {
     

@@ -56,6 +56,10 @@ class RegisterViewController: UIViewController {
             $0.addTarget(self, action: #selector(checkRegisterBtn), for: .editingChanged)
         })
         passwordTextField.passwordRules = AppUtility.createPasswordRules()
+        addDoneToolbar(forTextField: firstNameTextField)
+        addDoneToolbar(forTextField: lastnameTextField)
+        addDoneToolbar(forTextField: usernameTextField)
+        addDoneToolbar(forTextField: passwordTextField)
     }
     
     // MARK: UI Actions

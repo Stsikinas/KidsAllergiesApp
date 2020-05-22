@@ -18,8 +18,8 @@ public struct TipCategory {
 }
 
 public struct UserCategory {
-    let Mom = "Mom"
-    let Dad = "Dad"
+    let Parent = "Parent"
+    let Researcher = "Researcher"
     let Doctor = "Doctor"
     let Visitor = "Visitor"
 }

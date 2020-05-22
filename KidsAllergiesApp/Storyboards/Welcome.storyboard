@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hxr-gh-Xad">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hxr-gh-Xad">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -105,28 +105,32 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="job-kz-fg2">
                                 <rect key="frame" x="47" y="190" width="281" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="name"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZS-nZ-d9w">
                                 <rect key="frame" x="47" y="249" width="281" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="surname"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LfW-3e-Pm3">
                                 <rect key="frame" x="47" y="308" width="281" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="email"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hM6-5J-kAM">
                                 <rect key="frame" x="47" y="367" width="281" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="registerPass"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="new-password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWF-Cj-OeE">
                                 <rect key="frame" x="47" y="512" width="281" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier="loginBtn"/>
+                                <accessibility key="accessibilityConfiguration" identifier="register"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="hOe-A0-Y9b"/>
                                 </constraints>
@@ -135,7 +139,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginAction:" destination="X7K-Uy-uKj" eventType="touchUpInside" id="U9y-Tj-xl5"/>
                                     <action selector="registerPressedBtn:" destination="3VO-7Y-Mfr" eventType="touchUpInside" id="6xS-FF-jo8"/>
                                 </connections>
                             </button>
@@ -221,6 +224,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8S-Lf-phz">
                                 <rect key="frame" x="121" y="615" width="133" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="registerBtn"/>
                                 <state key="normal" title="New User? Sign Up">
                                     <color key="titleColor" red="0.0" green="0.67450980390000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>

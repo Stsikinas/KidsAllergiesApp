@@ -69,5 +69,92 @@ class WelcomeScreenUITests: XCTestCase {
         loginButton.tap()
         
     }
+    
+    func testInvalidEmailRegisterView() throws {
+        XCUIApplication().launch()
+        
+        // Move to Login
+        XCUIApplication().buttons.element.tap()
+        
+        let loginButton = XCUIApplication().buttons["loginBtn"]
+        XCTAssertEqual(loginButton.isEnabled, false)
+        
+        // Move to Register Screen
+        let registerButton = XCUIApplication().buttons["registerBtn"]
+        registerButton.tap()
+        
+        // Fill wrong user info
+        let nameTextField = XCUIApplication().textFields["name"]
+        nameTextField.tap()
+        nameTextField.typeText("Steve")
+        // Find toolbar button
+        let doneButton = XCUIApplication().buttons["doneToolbar"]
+        doneButton.tap()
+        let lastnameTextField = XCUIApplication().textFields["surname"]
+        lastnameTextField.tap()
+        lastnameTextField.typeText("Doe")
+        doneButton.tap()
+        // Make sure that register button isn't enabled
+        let doRegisterBtn = XCUIApplication().buttons["register"]
+        XCTAssertFalse(doRegisterBtn.isEnabled)
+        sleep(2)
+        // Add wrong e-mail to show invalid e-mail alert
+        let usernameTextField = XCUIApplication().textFields["email"]
+        usernameTextField.tap()
+        usernameTextField.typeText("wrong.email")
+        doneButton.tap()
+        let passwordTextField = XCUIApplication().secureTextFields["registerPass"]
+        passwordTextField.tap()
+        passwordTextField.typeText("Mmiller#13")
+        doneButton.tap()
+        sleep(3)
+        // Make sure that register button is enabled
+        XCTAssertTrue(doRegisterBtn.isEnabled)
+        doRegisterBtn.tap()
+        
+    }
+    
+    func testInvalidPasswordRegisterView() throws {
+        XCUIApplication().launch()
+        
+        // Move to Login
+        XCUIApplication().buttons.element.tap()
+        
+        let loginButton = XCUIApplication().buttons["loginBtn"]
+        XCTAssertEqual(loginButton.isEnabled, false)
+        
+        // Move to Register Screen
+        let registerButton = XCUIApplication().buttons["registerBtn"]
+        registerButton.tap()
+        
+        // Fill wrong user info
+        let nameTextField = XCUIApplication().textFields["name"]
+        nameTextField.tap()
+        nameTextField.typeText("Steve")
+        // Find toolbar button
+        let doneButton = XCUIApplication().buttons["doneToolbar"]
+        doneButton.tap()
+        let lastnameTextField = XCUIApplication().textFields["surname"]
+        lastnameTextField.tap()
+        lastnameTextField.typeText("Doe")
+        doneButton.tap()
+        // Make sure that register button isn't enabled
+        let doRegisterBtn = XCUIApplication().buttons["register"]
+        XCTAssertFalse(doRegisterBtn.isEnabled)
+        sleep(2)
+        let usernameTextField = XCUIApplication().textFields["email"]
+        usernameTextField.tap()
+        usernameTextField.typeText("correct.email@email.com")
+        doneButton.tap()
+        // Add invalid password to show invalid alert
+        let passwordTextField = XCUIApplication().secureTextFields["registerPass"]
+        passwordTextField.tap()
+        passwordTextField.typeText("12345")
+        doneButton.tap()
+        sleep(3)
+        // Make sure that register button is enabled
+        XCTAssertTrue(doRegisterBtn.isEnabled)
+        doRegisterBtn.tap()
+    }
 
 }
