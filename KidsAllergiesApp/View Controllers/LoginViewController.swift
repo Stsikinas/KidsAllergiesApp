@@ -54,6 +54,8 @@ class LoginViewController: UIViewController {
         [usernameTextField, passwordTextField].forEach({
             $0.addTarget(self, action: #selector(checkLoginBtn), for: .editingChanged)
         })
+        addDoneToolbar(forTextField: usernameTextField)
+        addDoneToolbar(forTextField: passwordTextField)
     }
     
     // MARK: UI Actions
