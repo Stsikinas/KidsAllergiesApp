@@ -13,6 +13,13 @@ import UIKit
 
 extension UIViewController: UITextFieldDelegate {
     
+    // Add notification center to handle notifications
+    public final var notificationCenter: NotificationCenter {
+        get {
+            return NotificationCenter.default
+        }
+    }
+    
     func showNoActionAlert(_ withTitle: String, message: String) {
         let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

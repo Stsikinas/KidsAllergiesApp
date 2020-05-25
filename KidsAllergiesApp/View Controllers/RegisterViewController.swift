@@ -26,6 +26,7 @@ class RegisterViewController: UIViewController {
         
         configureView()
         setupTextFields()
+        notificationCenter.addObserver(self, selector: #selector(registeredUser), name: CREATE_USER, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,7 +70,10 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressedBtn(_ sender: Any) {
-        guard let userText = usernameTextField.text, let passText = passwordTextField.text else {
+        guard let nameText = firstNameTextField.text,
+            let lastnameText = lastnameTextField.text,
+            let userText = usernameTextField.text,
+            let passText = passwordTextField.text else {
             return
         }
         if !userText.isEmailValid() {
@@ -78,6 +82,13 @@ class RegisterViewController: UIViewController {
         } else if !AppUtility.isValid(passText, forRules: AppUtility.passRules) {
             showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
                               message: NSLocalizedString("invalid_password", tableName: "Resources_EN", comment: ""))
+        } else {
+            let user = User(name: nameText,
+                            surname: lastnameText,
+                            username: userText,
+                            password: passText,
+                            categories: [UserCategory().Parent])
+            DatabaseProvider().insertUser([User.className: user])
         }
     }
     
@@ -102,6 +113,18 @@ class RegisterViewController: UIViewController {
             passwordTextField.isSecureTextEntry = true
             sender.setImage(UIImage(named: "hide_pass"), for: .normal)
         }
+    }
+    
+    @objc func registeredUser(notification: Notification) {
+        guard let userInfo = notification.userInfo as? [String: Bool] else {
+            return
+        }
+        if userInfo["userCreated"] == true {
+            DispatchQueue.main.async {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        
     }
 
 }

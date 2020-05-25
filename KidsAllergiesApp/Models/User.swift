@@ -14,6 +14,10 @@ public struct User {
     var surname: String
     var username: String
     var password: String
-    var categories: [UserCategory]
+    var categories: [String]
+    
+    static var className: String {
+        return String(describing: self)
+    }
     
 }

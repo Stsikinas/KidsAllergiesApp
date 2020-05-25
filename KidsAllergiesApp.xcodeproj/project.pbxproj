@@ -14,6 +14,7 @@
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
 		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
+		466A0B94247BAEE7001CE895 /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A0B93247BAEE7001CE895 /* DatabaseProvider.swift */; };
 		46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46967C052473CFC300E454C2 /* TipsTableViewCell.swift */; };
 		46B49B022473D7670079203D /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B49B012473D7670079203D /* TipsTableViewController.swift */; };
 		46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C8BCED246EAFD6006E42F4 /* Home.storyboard */; };
@@ -27,6 +28,7 @@
 		46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC224604F650052B3E3 /* AccountHelper.swift */; };
 		46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC42460530B0052B3E3 /* MainViewController.swift */; };
 		46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */; };
+		46D1D8B8247BEB6600EFB27B /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D1D8B7247BEB6600EFB27B /* Consts.swift */; };
 		46DBBA142462D88200520115 /* Resources_EN.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DBBA162462D88200520115 /* Resources_EN.strings */; };
 		46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1C64A24751612001B96C0 /* UserViewModel.swift */; };
 		46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */; };
@@ -62,6 +64,7 @@
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		466A0B93247BAEE7001CE895 /* DatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
 		46967C052473CFC300E454C2 /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
 		46B49B012473D7670079203D /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
 		46C8BCED246EAFD6006E42F4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		46CCDFC224604F650052B3E3 /* AccountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
 		46CCDFC42460530B0052B3E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		46D1D8B7247BEB6600EFB27B /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46DBBA152462D88200520115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Resources_EN.strings; sourceTree = "<group>"; };
 		46E1C64A24751612001B96C0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
@@ -136,6 +140,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		466A0B92247BAECC001CE895 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				466A0B93247BAEE7001CE895 /* DatabaseProvider.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
 		46CCDF7E24602FF40052B3E3 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 		46CCDF8924602FF40052B3E3 /* KidsAllergiesApp */ = {
 			isa = PBXGroup;
 			children = (
+				466A0B92247BAECC001CE895 /* SQLite */,
 				46CCDF9824602FF50052B3E3 /* Info.plist */,
 				46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */,
 				46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */,
@@ -240,6 +253,7 @@
 				46420121246D780500A304C6 /* TextUtils.swift */,
 				46420123246D7E9600A304C6 /* Extensions.swift */,
 				4650AFE024727C8F00E95010 /* AppUtility.swift */,
+				46D1D8B7247BEB6600EFB27B /* Consts.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -521,12 +535,14 @@
 				46F797BC2475434400B2AE94 /* Categories.swift in Sources */,
 				46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */,
 				46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */,
+				46D1D8B8247BEB6600EFB27B /* Consts.swift in Sources */,
 				46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */,
 				46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */,
 				46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */,
 				46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
 				46420124246D7E9600A304C6 /* Extensions.swift in Sources */,
+				466A0B94247BAEE7001CE895 /* DatabaseProvider.swift in Sources */,
 				46F797BD2475434400B2AE94 /* User.swift in Sources */,
 				46420122246D780500A304C6 /* TextUtils.swift in Sources */,
 				46B49B022473D7670079203D /* TipsTableViewController.swift in Sources */,
