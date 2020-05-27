@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
         
         configureView()
         setupTextFields()
-        notificationCenter.addObserver(self, selector: #selector(registeredUser), name: CREATE_USER, object: nil)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,6 +76,14 @@ class RegisterViewController: UIViewController {
             let passText = passwordTextField.text else {
             return
         }
+        if let existingUser = AccountHelper.shared.getRegisteredUser() {
+            if existingUser.username == userText {
+                showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
+                                  message: NSLocalizedString("user_exists", tableName: "Resources_EN", comment: ""))
+                return
+            }
+        }
+        
         if !userText.isEmailValid() {
             showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
                               message: NSLocalizedString("invalid_email", tableName: "Resources_EN", comment: ""))
@@ -86,8 +94,9 @@ class RegisterViewController: UIViewController {
             let user = User(name: nameText,
                             surname: lastnameText,
                             username: userText,
-                            password: passText,
-                            categories: [UserCategory().Parent])
+                            password: passText)
+            AccountHelper.shared.create(user)
+            dismiss(animated: true, completion: nil)
         }
     }
     
@@ -111,20 +120,6 @@ class RegisterViewController: UIViewController {
         } else {
             passwordTextField.isSecureTextEntry = true
             sender.setImage(UIImage(named: "hide_pass"), for: .normal)
-        }
-    }
-    
-    @objc func registeredUser(notification: Notification) {
-        guard let userInfo = notification.userInfo as? [String: Bool] else {
-            return
-        }
-        if userInfo["userCreated"] == true {
-            DispatchQueue.main.async {
-                self.dismiss(animated: true, completion: nil)
-            }
-        } else {
-            showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
-            message: NSLocalizedString("user_exists", tableName: "Resources_EN", comment: ""))
         }
     }
 

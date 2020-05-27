@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
             guard let initialHome = homeStoryboard.instantiateInitialViewController() else {
                 return
             }
-            AccountHelper.shared.setNewUser()
+            AccountHelper.shared.loginUser()
             present(initialHome, animated: true, completion: nil)
         } else {
             showNoActionAlert(NSLocalizedString("login_failed", tableName: "Resources_EN", comment: ""),

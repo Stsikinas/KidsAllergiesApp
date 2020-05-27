@@ -9,4 +9,8 @@
 import Foundation
 
 
-public let CREATE_USER = NSNotification.Name("CREATE_USER_NOTIFICATION")
+// MARK: Notification Constants
+
+// MARK: User Defaults Keys
+let userCreated = "user-created"
+let loggedInUser = "user-logged-in"
