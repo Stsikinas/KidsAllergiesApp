@@ -33,7 +33,6 @@ public class AccountHelper {
         do {
             if let userAsData = UserDefaults.standard.object(forKey: userCreated) as? Data {
                 if let user = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(userAsData) as? User {
-                    print("User: \(user.name) \(user.surname) is already registered!")
                     return user
                 }
             }

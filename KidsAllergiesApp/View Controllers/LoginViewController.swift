@@ -61,17 +61,20 @@ class LoginViewController: UIViewController {
     // MARK: UI Actions
     
     @IBAction func loginAction(_ sender: Any) {
-        if (usernameTextField.text == "test" && passwordTextField.text == "12345") {
-            debugPrint("Login succeeded!")
-            let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
-            guard let initialHome = homeStoryboard.instantiateInitialViewController() else {
-                return
+        if let user = AccountHelper.shared.getRegisteredUser() {
+            if user.username == usernameTextField.text && user.password == passwordTextField.text {
+                debugPrint("Login succeeded!")
+                let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+                guard let initialHome = homeStoryboard.instantiateInitialViewController() else {
+                    return
+                }
+                AccountHelper.shared.loginUser()
+                present(initialHome, animated: true, completion: nil)
+            } else {
+                showNoActionAlert(NSLocalizedString("login_failed", tableName: "Resources_EN", comment: ""), message: NSLocalizedString("login_failed_msg", tableName: "Resources_EN", comment: ""))
             }
-            AccountHelper.shared.loginUser()
-            present(initialHome, animated: true, completion: nil)
         } else {
-            showNoActionAlert(NSLocalizedString("login_failed", tableName: "Resources_EN", comment: ""),
-                              message: NSLocalizedString("login_failed_msg", tableName: "Resources_EN", comment: ""))
+            showNoActionAlert(NSLocalizedString("login_failed", tableName: "Resources_EN", comment: ""), message: NSLocalizedString("login_failed_msg", tableName: "Resources_EN", comment: ""))
         }
     }
     
