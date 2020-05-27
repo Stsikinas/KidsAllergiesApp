@@ -14,7 +14,6 @@
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
 		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
-		466A0B94247BAEE7001CE895 /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A0B93247BAEE7001CE895 /* DatabaseProvider.swift */; };
 		46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46967C052473CFC300E454C2 /* TipsTableViewCell.swift */; };
 		46B49B022473D7670079203D /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B49B012473D7670079203D /* TipsTableViewController.swift */; };
 		46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C8BCED246EAFD6006E42F4 /* Home.storyboard */; };
@@ -64,7 +63,6 @@
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		466A0B93247BAEE7001CE895 /* DatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
 		46967C052473CFC300E454C2 /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
 		46B49B012473D7670079203D /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
 		46C8BCED246EAFD6006E42F4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -140,14 +138,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		466A0B92247BAECC001CE895 /* SQLite */ = {
-			isa = PBXGroup;
-			children = (
-				466A0B93247BAEE7001CE895 /* DatabaseProvider.swift */,
-			);
-			path = SQLite;
-			sourceTree = "<group>";
-		};
 		46CCDF7E24602FF40052B3E3 = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +163,6 @@
 		46CCDF8924602FF40052B3E3 /* KidsAllergiesApp */ = {
 			isa = PBXGroup;
 			children = (
-				466A0B92247BAECC001CE895 /* SQLite */,
 				46CCDF9824602FF50052B3E3 /* Info.plist */,
 				46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */,
 				46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */,
@@ -542,7 +531,6 @@
 				46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
 				46420124246D7E9600A304C6 /* Extensions.swift in Sources */,
-				466A0B94247BAEE7001CE895 /* DatabaseProvider.swift in Sources */,
 				46F797BD2475434400B2AE94 /* User.swift in Sources */,
 				46420122246D780500A304C6 /* TextUtils.swift in Sources */,
 				46B49B022473D7670079203D /* TipsTableViewController.swift in Sources */,

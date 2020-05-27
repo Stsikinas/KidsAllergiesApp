@@ -22,4 +22,5 @@
 // MARK: String related to Register Screen
 "register_failed" = "Register Failed";
 "invalid_email" = "The email address is not valid.\nChoose different address.";
-"invalid_password" = "The password must contain:\n *At least 1 Uppercased character\n *At least 1 lowercased character\n *At least one digit\n *At least 8 characters";
+"invalid_password" = "The password must contain:\n *At least 1 Uppercased character\n *At least 1 lowercased character\n *At least one digit\n *At least 8 characters.";
+"user_exists" = "User already exists.";

@@ -88,7 +88,6 @@ class RegisterViewController: UIViewController {
                             username: userText,
                             password: passText,
                             categories: [UserCategory().Parent])
-            DatabaseProvider().insertUser([User.className: user])
         }
     }
     
@@ -123,8 +122,10 @@ class RegisterViewController: UIViewController {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
             }
+        } else {
+            showNoActionAlert(NSLocalizedString("register_failed", tableName: "Resources_EN", comment: ""),
+            message: NSLocalizedString("user_exists", tableName: "Resources_EN", comment: ""))
         }
-        
     }
 
 }
