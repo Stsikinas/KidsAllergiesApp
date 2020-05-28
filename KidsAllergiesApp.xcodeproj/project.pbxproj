@@ -10,6 +10,7 @@
 		1C34B1B6C54613AA819B3AAF /* libPods-KidsAllergiesAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E7F036EFEB878232DB80CF /* libPods-KidsAllergiesAppUITests.a */; };
 		291485E370C71372937FD649 /* Pods_KidsAllergiesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */; };
 		46392E6624767B7000586116 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46392E6524767B7000586116 /* RegisterViewController.swift */; };
+		463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */; };
 		46420122246D780500A304C6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420121246D780500A304C6 /* TextUtils.swift */; };
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
@@ -59,6 +60,7 @@
 		33F4B5FE3F4473C8531909DD /* Pods-KidsAllergiesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesApp.debug.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsAllergiesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46392E6524767B7000586116 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		46420121246D780500A304C6 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
@@ -203,9 +205,10 @@
 			children = (
 				465C5DBE24659FA5000C24D6 /* LoginViewController.swift */,
 				46CCDFC42460530B0052B3E3 /* MainViewController.swift */,
+				46392E6524767B7000586116 /* RegisterViewController.swift */,
 				46B49B012473D7670079203D /* TipsTableViewController.swift */,
 				46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */,
-				46392E6524767B7000586116 /* RegisterViewController.swift */,
+				463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */,
 				46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
+				463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */,
 				46420124246D7E9600A304C6 /* Extensions.swift in Sources */,
 				46F797BD2475434400B2AE94 /* User.swift in Sources */,
 				46420122246D780500A304C6 /* TextUtils.swift in Sources */,

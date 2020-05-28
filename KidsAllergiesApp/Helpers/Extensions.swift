@@ -20,6 +20,38 @@ extension UIViewController: UITextFieldDelegate {
         }
     }
     
+    func setupNavigation(withTitle: String? = nil, withImage: UIImage? = nil) {
+        
+        if withImage != nil {
+            guard let navController = navigationController else {
+                return
+            }
+            
+            let imageView = UIImageView(image: withImage)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = bannerWidth / 2 - (withImage!.size.width) / 2
+            let bannerY = bannerHeight / 2 - (withImage!.size.height) / 2
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+            imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        } else if withTitle != nil {
+             title = withTitle
+            navigationController?.navigationBar.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 25.0)!
+            ]
+        }
+       
+        navigationController?.navigationBar.barTintColor = AppUtility().primaryColor
+        navigationController?.navigationBar.isTranslucent = false
+        
+    }
+    
     func showNoActionAlert(_ withTitle: String, message: String) {
         let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

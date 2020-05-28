@@ -1,23 +1,23 @@
 //
-//  TipsTableViewController.swift
+//  PostsTableViewController.swift
 //  KidsAllergiesApp
 //
-//  Created by Epsilon User on 19/5/20.
+//  Created by Epsilon User on 28/5/20.
 //  Copyright © 2020 Stavros Team. All rights reserved.
 //
 
 import UIKit
 
-class TipsTableViewController: UITableViewController {
+class PostsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        setupNavigation(withImage: UIImage(named: "tips_title.png"))
-    
+        setupNavigation(withImage: UIImage(named: "community_title.png"))
     }
 
-    // MARK: Overidden Methods
+    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -28,6 +28,4 @@ class TipsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    
-    
 }

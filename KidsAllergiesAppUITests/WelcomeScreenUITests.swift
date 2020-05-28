@@ -60,13 +60,7 @@ class WelcomeScreenUITests: XCTestCase {
         waitForExpectations(timeout: 3, handler: nil)
         XCTAssert(loginFailed.exists)
         loginFailed.buttons.element.tap()
-        // Fix password (if needed)
-        passwordTextField.tap()
-        passwordTextField.typeText("12345")
-        toggleButton.tap()
-        XCTAssertEqual(loginButton.isEnabled, true)
-        sleep(5)
-        loginButton.tap()
+        sleep(2)
         
     }
     
