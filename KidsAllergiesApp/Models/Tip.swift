@@ -13,5 +13,5 @@ struct Tip {
     var tipTitle: String
     var tipDescr: String
     var tipImage: UIImage
-    var tipCat: [TipCategory]
+    var tipCat: TipCategory
 }

@@ -11,6 +11,35 @@ import UIKit
 
 // MARK: UIKit Extensions
 
+extension UIView {
+    
+    func makeEqual(_ width: CGFloat, _ height: CGFloat) {
+        translatesAutoresizingMaskIntoConstraints = false
+        let widthConstraint = NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: superview, attribute: .width, multiplier: width, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: superview, attribute: .height, multiplier: height, constant: 0)
+        superview?.addConstraints([widthConstraint, heightConstraint])
+        
+    }
+    
+    func cardView(ofRadius: CGFloat, withShadow: UIColor) {
+        layer.cornerRadius = ofRadius
+        layer.shadowColor = withShadow.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        layer.shadowRadius = 12.0
+        layer.shadowOpacity = 0.7
+    }
+    
+}
+
+extension UITableViewController {
+    
+    func setupTableViewProperties() {
+        tableView.separatorStyle = .none
+        tableView.tableFooterView = UIView()
+    }
+    
+}
+
 extension UIViewController: UITextFieldDelegate {
     
     // Add notification center to handle notifications

@@ -8,13 +8,13 @@
 
 import Foundation
 
-public struct TipCategory {
-    let Baby = "Baby"
-    let Mom = "Mom"
-    let Products = "Products"
-    let Shops = "Shops"
-    let Medicines = "Medicines"
-    let Development = "Development"
+public enum TipCategory: String {
+    case Baby = "Baby"
+    case Mom = "Mom"
+    case Products = "Products"
+    case Shops = "Shops"
+    case Medicines = "Medicines"
+    case Development = "Development"
 }
 
 public struct UserCategory {

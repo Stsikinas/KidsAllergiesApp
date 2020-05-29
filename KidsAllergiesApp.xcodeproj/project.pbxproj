@@ -15,7 +15,7 @@
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
 		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
-		46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46967C052473CFC300E454C2 /* TipsTableViewCell.swift */; };
+		46846B2E248129B300A931CB /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46846B2D248129B300A931CB /* TipsTableViewCell.swift */; };
 		46B49B022473D7670079203D /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B49B012473D7670079203D /* TipsTableViewController.swift */; };
 		46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C8BCED246EAFD6006E42F4 /* Home.storyboard */; };
 		46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */; };
@@ -32,6 +32,8 @@
 		46DBBA142462D88200520115 /* Resources_EN.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DBBA162462D88200520115 /* Resources_EN.strings */; };
 		46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1C64A24751612001B96C0 /* UserViewModel.swift */; };
 		46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */; };
+		46EFAEBE247FED9C00EF670D /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */; };
+		46EFAEC0247FF02500EF670D /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAEBF247FF02500EF670D /* TipViewModel.swift */; };
 		46F797BB2475434400B2AE94 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F797B82475434400B2AE94 /* Tip.swift */; };
 		46F797BC2475434400B2AE94 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F797B92475434400B2AE94 /* Categories.swift */; };
 		46F797BD2475434400B2AE94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F797BA2475434400B2AE94 /* User.swift */; };
@@ -65,7 +67,7 @@
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		46967C052473CFC300E454C2 /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
+		46846B2D248129B300A931CB /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
 		46B49B012473D7670079203D /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
 		46C8BCED246EAFD6006E42F4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		46CCDF8724602FF40052B3E3 /* Kids Allergies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Allergies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,8 @@
 		46DBBA152462D88200520115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Resources_EN.strings; sourceTree = "<group>"; };
 		46E1C64A24751612001B96C0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
+		46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		46EFAEBF247FF02500EF670D /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
 		46F797B82475434400B2AE94 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		46F797B92475434400B2AE94 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		46F797BA2475434400B2AE94 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				46B49B012473D7670079203D /* TipsTableViewController.swift */,
 				46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */,
 				463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */,
+				46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 		46CCDFBB246032930052B3E3 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				46EFAEBF247FF02500EF670D /* TipViewModel.swift */,
 				46E1C64A24751612001B96C0 /* UserViewModel.swift */,
 			);
 			path = "View Models";
@@ -224,7 +230,7 @@
 		46CCDFBC2460329A0052B3E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				46967C052473CFC300E454C2 /* TipsTableViewCell.swift */,
+				46846B2D248129B300A931CB /* TipsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -520,7 +526,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EFAEBE247FED9C00EF670D /* RecipesTableViewController.swift in Sources */,
+				46846B2E248129B300A931CB /* TipsTableViewCell.swift in Sources */,
 				465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */,
+				46EFAEC0247FF02500EF670D /* TipViewModel.swift in Sources */,
 				46F797BB2475434400B2AE94 /* Tip.swift in Sources */,
 				46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */,
 				4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */,
@@ -531,7 +540,6 @@
 				46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */,
 				46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */,
 				46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */,
-				46967C062473CFC300E454C2 /* TipsTableViewCell.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
 				463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */,
 				46420124246D7E9600A304C6 /* Extensions.swift in Sources */,
