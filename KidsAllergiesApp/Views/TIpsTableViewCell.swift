@@ -12,21 +12,43 @@ class TipsTableViewCell: UITableViewCell {
 
     var textView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         view.cardView(ofRadius: 12.0, withShadow: UIColor.gray)
         return view
     }()
-    var titleLabel: UILabel
+    
+    var titleLabel: UILabel = {
+       let label = UILabel()
+        label.textColor = .black
+        label.font = UIFont(name: "AmericanTypewriter", size: 28.0)
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        return label
+    }()
+    var descriptionLabel: UILabel = {
+        let label = UILabel()
+         label.textColor = .black
+         label.font = UIFont(name: "AmericanTypewriter", size: 16.0)
+         label.numberOfLines = 3
+         return label
+    }()
+    var tipImageView: UIImageView = {
+       let imageView = UIImageView()
+        imageView.cardView(ofRadius: 12.0, withShadow: UIColor.black)
+        imageView.contentMode = .scaleToFill
+        return imageView
+    }()
+    /*
     var descriptionLabel: UILabel
     var tipImageView: UIImageView
-    var category: UIButton
+    var category: UIButton*/
     
     var tipViewModel: TipViewModel! {
         didSet {
             titleLabel.text = tipViewModel.title
             descriptionLabel.text = tipViewModel.description
             tipImageView.image = tipViewModel.image
-            category.titleLabel?.text = tipViewModel.chip
+            //category.titleLabel?.text = tipViewModel.chip
         }
     }
     
@@ -34,13 +56,24 @@ class TipsTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        selectionStyle = .none
+        backgroundColor = .clear
+        
+        addSubview(tipImageView)
+        tipImageView.addAnchors(wAnchor: widthAnchor, 0.4, hAnchor: heightAnchor, 0.9, cYAnchor: centerYAnchor, rAnchor: rightAnchor, rightConstant: -12)
         addSubview(textView)
-        textView.makeEqual(1.0, 1.0)
+        textView.addAnchors(wAnchor: widthAnchor, 0.7, hAnchor: heightAnchor, 0.8, cYAnchor: centerYAnchor, lAnchor: leftAnchor, leftConstant: 8)
+        textView.addSubview(titleLabel)
+        titleLabel.addAnchors(wAnchor: textView.widthAnchor, 0.9, cXAnchor: textView.centerXAnchor, tAnchor: textView.topAnchor, topConstant: 8)
+        textView.addSubview(descriptionLabel)
+        descriptionLabel.addAnchors(wAnchor: titleLabel.widthAnchor, 1.0, lAnchor: textView.leftAnchor, leftConstant: 8,
+                                    tAnchor: titleLabel.bottomAnchor, topConstant: 12)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
     
     
 }
