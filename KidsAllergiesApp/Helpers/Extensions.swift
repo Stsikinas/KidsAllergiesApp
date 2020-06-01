@@ -13,12 +13,56 @@ import UIKit
 
 extension UIView {
     
-    func makeEqual(_ width: CGFloat, _ height: CGFloat) {
-        translatesAutoresizingMaskIntoConstraints = false
-        let widthConstraint = NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: superview, attribute: .width, multiplier: width, constant: 0)
-        let heightConstraint = NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: superview, attribute: .height, multiplier: height, constant: 0)
-        superview?.addConstraints([widthConstraint, heightConstraint])
+    func addAnchors(wAnchor: NSLayoutDimension? = nil, _ wMulti: CGFloat? = nil,
+                    hAnchor: NSLayoutDimension? = nil,_ hMulti: CGFloat? = nil,
+                    cXAnchor: NSLayoutXAxisAnchor? = nil, cYAnchor: NSLayoutYAxisAnchor? = nil,
+                    lAnchor: NSLayoutXAxisAnchor? = nil, leftConstant: CGFloat? = nil,
+                    tAnchor: NSLayoutYAxisAnchor? = nil, topConstant: CGFloat? = nil,
+                    rAnchor: NSLayoutXAxisAnchor? = nil, rightConstant: CGFloat? = nil) {
         
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        if wAnchor != nil {
+            if wMulti == nil {
+                widthAnchor.constraint(equalTo: wAnchor!, multiplier: 1.0).isActive = true
+            } else {
+                widthAnchor.constraint(equalTo: wAnchor!, multiplier: wMulti!).isActive = true
+            }
+        }
+        if hAnchor != nil {
+            if hMulti == nil {
+                heightAnchor.constraint(equalTo: hAnchor!, multiplier: 1.0).isActive = true
+            } else {
+                heightAnchor.constraint(equalTo: hAnchor!, multiplier: hMulti!).isActive = true
+            }
+        }
+        if cXAnchor != nil {
+            centerXAnchor.constraint(equalTo: cXAnchor!, constant: 0).isActive = true
+        }
+        if cYAnchor != nil {
+            centerYAnchor.constraint(equalTo: cYAnchor!, constant: 0).isActive = true
+        }
+        if lAnchor != nil {
+            if leftConstant == nil {
+                leftAnchor.constraint(equalTo: lAnchor!, constant: 0).isActive = true
+            } else {
+                leftAnchor.constraint(equalTo: lAnchor!, constant: leftConstant!).isActive = true
+            }
+        }
+        if tAnchor != nil {
+            if tAnchor == nil {
+                topAnchor.constraint(equalTo: tAnchor!, constant: 0).isActive = true
+            } else {
+                topAnchor.constraint(equalTo: tAnchor!, constant: topConstant!).isActive = true
+            }
+        }
+        if rAnchor != nil {
+            if rightConstant == nil {
+                rightAnchor.constraint(equalTo: rAnchor!, constant: 0).isActive = true
+            } else {
+                rightAnchor.constraint(equalTo: rAnchor!, constant: rightConstant!).isActive = true
+            }
+        }
     }
     
     func cardView(ofRadius: CGFloat, withShadow: UIColor) {

@@ -18,7 +18,7 @@ class TipsTableViewController: UITableViewController {
         
         setupNavigation(withImage: UIImage(named: "tips_title.png"))
         setupTableViewProperties()
-        tableView.register(UINib(nibName: "TipsTableViewCell", bundle: nil), forCellReuseIdentifier: cellID)
+        tableView.register(TipsTableViewCell.self, forCellReuseIdentifier: cellID)
         setupTips()
     }
     
@@ -42,9 +42,14 @@ class TipsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! TipsTableViewCell
+        
         cell.tipViewModel = tipsViewModel[indexPath.row]
         return cell
         
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
     
     
