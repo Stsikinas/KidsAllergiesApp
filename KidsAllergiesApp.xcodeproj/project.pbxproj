@@ -11,6 +11,7 @@
 		291485E370C71372937FD649 /* Pods_KidsAllergiesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */; };
 		46392E6624767B7000586116 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46392E6524767B7000586116 /* RegisterViewController.swift */; };
 		463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */; };
+		4641955224864A2200CC6E3E /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641955124864A2200CC6E3E /* TagButton.swift */; };
 		46420122246D780500A304C6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420121246D780500A304C6 /* TextUtils.swift */; };
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
@@ -63,6 +64,7 @@
 		3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsAllergiesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46392E6524767B7000586116 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		4641955124864A2200CC6E3E /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		46420121246D780500A304C6 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				46846B2D248129B300A931CB /* TipsTableViewCell.swift */,
+				4641955124864A2200CC6E3E /* TagButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				46EFAEC0247FF02500EF670D /* TipViewModel.swift in Sources */,
 				46F797BB2475434400B2AE94 /* Tip.swift in Sources */,
 				46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */,
+				4641955224864A2200CC6E3E /* TagButton.swift in Sources */,
 				4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */,
 				46F797BC2475434400B2AE94 /* Categories.swift in Sources */,
 				46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */,

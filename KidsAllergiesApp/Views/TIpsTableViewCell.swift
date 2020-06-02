@@ -34,21 +34,23 @@ class TipsTableViewCell: UITableViewCell {
     }()
     var tipImageView: UIImageView = {
        let imageView = UIImageView()
-        imageView.cardView(ofRadius: 12.0, withShadow: UIColor.black)
+        imageView.cardView(ofRadius: 15.0)
         imageView.contentMode = .scaleToFill
         return imageView
     }()
-    /*
-    var descriptionLabel: UILabel
-    var tipImageView: UIImageView
-    var category: UIButton*/
+    var tipButton: TagButton = {
+        let button = TagButton()
+        button.setupButton()
+        return button
+    }()
     
     var tipViewModel: TipViewModel! {
         didSet {
             titleLabel.text = tipViewModel.title
             descriptionLabel.text = tipViewModel.description
             tipImageView.image = tipViewModel.image
-            //category.titleLabel?.text = tipViewModel.chip
+            tipButton.setTitle(tipViewModel.chip, for: .normal)
+            tipButton.updateButtonColor(tipViewModel.tipCategory)
         }
     }
     
@@ -68,6 +70,9 @@ class TipsTableViewCell: UITableViewCell {
         textView.addSubview(descriptionLabel)
         descriptionLabel.addAnchors(wAnchor: titleLabel.widthAnchor, 1.0, lAnchor: textView.leftAnchor, leftConstant: 8,
                                     tAnchor: titleLabel.bottomAnchor, topConstant: 12)
+        textView.addSubview(tipButton)
+        tipButton.addAnchors(lAnchor: textView.leftAnchor, leftConstant: 8, tAnchor: descriptionLabel.bottomAnchor, topConstant: 8)
+        
     }
     
     required init?(coder: NSCoder) {

@@ -11,6 +11,50 @@ import UIKit
 
 // MARK: UIKit Extensions
 
+extension UIColor {
+    
+    class var peach: UIColor {
+        get {
+            return UIColor(red: 1.0, green: 0.898, blue: 0.706, alpha: 1.0)
+        }
+    }
+    class var babyPink: UIColor {
+        get {
+            return UIColor(red: 1.0, green: 0.706, blue: 0.737, alpha: 1.0)
+        }
+    }
+    class var lilac: UIColor {
+        get {
+            return UIColor(red: 0.706, green: 0.737, blue: 1.0, alpha: 1.0)
+        }
+    }
+    class var veraman: UIColor {
+        get {
+            return UIColor(red: 0, green: 0.784, blue: 0.698, alpha: 1.0)
+        }
+    }
+    class var gold: UIColor {
+        get {
+            return UIColor(red: 0.784, green: 0.698, blue: 0, alpha: 1.0)
+        }
+    }
+    class var strongBlue: UIColor {
+        get {
+            return UIColor(red: 0, green: 0.478, blue: 0.784, alpha: 1.0)
+        }
+    }
+    class var grayishOrange: UIColor {
+        get {
+            return UIColor(red: 0.749, green: 0.663, blue: 0.573, alpha: 1.0)
+        }
+    }
+    class var lightSaturatedRed: UIColor {
+        get {
+            return UIColor(red: 0.71, green: 0.51, blue: 0.514, alpha: 1.0)
+        }
+    }
+}
+
 extension UIView {
     
     func addAnchors(wAnchor: NSLayoutDimension? = nil, _ wMulti: CGFloat? = nil,
@@ -65,12 +109,14 @@ extension UIView {
         }
     }
     
-    func cardView(ofRadius: CGFloat, withShadow: UIColor) {
+    func cardView(ofRadius: CGFloat, withShadow: UIColor? = nil) {
         layer.cornerRadius = ofRadius
-        layer.shadowColor = withShadow.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        layer.shadowRadius = 12.0
-        layer.shadowOpacity = 0.7
+        if withShadow != nil {
+            layer.shadowColor = withShadow!.cgColor
+            layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+            layer.shadowRadius = 12.0
+            layer.shadowOpacity = 0.7
+        }
     }
     
 }

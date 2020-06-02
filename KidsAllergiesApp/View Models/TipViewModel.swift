@@ -14,6 +14,7 @@ public struct TipViewModel {
     let title: String
     let description: String
     let image: UIImage
+    let tipCategory: TipCategory
     let chip: String
     
     // DI
@@ -21,6 +22,7 @@ public struct TipViewModel {
         self.title = tip.tipTitle
         self.description = tip.tipDescr
         self.image = tip.tipImage
+        self.tipCategory = tip.tipCat
         self.chip = tip.tipCat.rawValue
         
     }
