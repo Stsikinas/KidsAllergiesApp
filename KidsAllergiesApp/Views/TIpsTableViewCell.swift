@@ -79,6 +79,4 @@ class TipsTableViewCell: UITableViewCell {
         super.init(coder: coder)
     }
     
-    
-    
 }
