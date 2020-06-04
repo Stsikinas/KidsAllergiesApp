@@ -15,12 +15,14 @@ public class User: NSObject, NSCoding {
     var surname: String
     var username: String
     var password: String
+    let userType: String
     
     init(name: String, surname: String, username: String, password: String) {
         self.name = name
         self.surname = surname
         self.username = username
         self.password = password
+        self.userType = UserCategory.Parent.rawValue
     }
     
     public func encode(with coder: NSCoder) {

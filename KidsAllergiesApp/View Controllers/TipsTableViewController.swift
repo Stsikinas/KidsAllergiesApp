@@ -16,8 +16,7 @@ class TipsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigation(withImage: UIImage(named: "tips_title.png"))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "settings.png"), landscapeImagePhone: nil, style: .plain, target: self, action: nil)
+        setupNavigation(withTitle: "Tips")
         navigationController?.navigationBar.tintColor = .white
         setupTableViewProperties()
         tableView.register(TipsTableViewCell.self, forCellReuseIdentifier: cellID)
@@ -58,7 +57,6 @@ class TipsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-    
     
     
 }

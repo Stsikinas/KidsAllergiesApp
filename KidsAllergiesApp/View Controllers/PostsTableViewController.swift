@@ -14,7 +14,7 @@ class PostsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         
-        setupNavigation(withImage: UIImage(named: "community_title.png"))
+        setupNavigation(withTitle: "Our Community")
     }
 
     // MARK: - Table view data source

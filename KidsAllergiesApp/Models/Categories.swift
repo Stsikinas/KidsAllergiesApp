@@ -17,11 +17,11 @@ public enum TipCategory: String {
     case Development = "Development"
 }
 
-public struct UserCategory {
-    let Parent = "Parent"
-    let Researcher = "Researcher"
-    let Doctor = "Doctor"
-    let Visitor = "Visitor"
+public enum UserCategory: String {
+    case Parent = "Parent"
+    case Researcher = "Researcher"
+    case Doctor = "Doctor"
+    case Visitor = "Visitor"
 }
 
 public struct RecipeCategory {

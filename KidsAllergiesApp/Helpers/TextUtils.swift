@@ -20,5 +20,18 @@ public class TextUtils {
         }
         return text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
     }
+    
+    public func concat( values : [String]) -> String {
+        var finalString = ""
+        for i in 0..<values.count {
+            if i == 0 {
+                finalString += values[0]
+            } else {
+                finalString += " "
+                finalString += values[i]
+            }
+        }
+        return finalString
+    }
 
 }

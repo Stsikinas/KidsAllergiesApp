@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		1C34B1B6C54613AA819B3AAF /* libPods-KidsAllergiesAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E7F036EFEB878232DB80CF /* libPods-KidsAllergiesAppUITests.a */; };
 		291485E370C71372937FD649 /* Pods_KidsAllergiesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */; };
+		4608C71B2487D8E300C4E28B /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608C71A2487D8E300C4E28B /* SettingsTableViewController.swift */; };
 		46392E6624767B7000586116 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46392E6524767B7000586116 /* RegisterViewController.swift */; };
 		463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */; };
 		4641955224864A2200CC6E3E /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641955124864A2200CC6E3E /* TagButton.swift */; };
 		46420122246D780500A304C6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420121246D780500A304C6 /* TextUtils.swift */; };
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
+		464873FC2488F2AC005609C4 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
 		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
 		46846B2E248129B300A931CB /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46846B2D248129B300A931CB /* TipsTableViewCell.swift */; };
@@ -62,11 +64,13 @@
 		0259092CD252409FB3C0A946 /* Pods_KidsAllergiesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsAllergiesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F4B5FE3F4473C8531909DD /* Pods-KidsAllergiesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsAllergiesApp.debug.xcconfig"; path = "Target Support Files/Pods-KidsAllergiesApp/Pods-KidsAllergiesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3A08065C3DEDA87947F0748A /* Pods_KidsAllergiesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsAllergiesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4608C71A2487D8E300C4E28B /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		46392E6524767B7000586116 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		4641955124864A2200CC6E3E /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		46420121246D780500A304C6 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46846B2D248129B300A931CB /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
@@ -211,11 +215,12 @@
 			children = (
 				465C5DBE24659FA5000C24D6 /* LoginViewController.swift */,
 				46CCDFC42460530B0052B3E3 /* MainViewController.swift */,
-				46392E6524767B7000586116 /* RegisterViewController.swift */,
-				46B49B012473D7670079203D /* TipsTableViewController.swift */,
-				46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */,
 				463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */,
 				46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */,
+				46392E6524767B7000586116 /* RegisterViewController.swift */,
+				4608C71A2487D8E300C4E28B /* SettingsTableViewController.swift */,
+				46B49B012473D7670079203D /* TipsTableViewController.swift */,
+				46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -232,8 +237,9 @@
 		46CCDFBC2460329A0052B3E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				46846B2D248129B300A931CB /* TipsTableViewCell.swift */,
+				464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */,
 				4641955124864A2200CC6E3E /* TagButton.swift */,
+				46846B2D248129B300A931CB /* TipsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -541,8 +547,10 @@
 				46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */,
 				46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */,
 				46D1D8B8247BEB6600EFB27B /* Consts.swift in Sources */,
+				464873FC2488F2AC005609C4 /* AvatarTableViewCell.swift in Sources */,
 				46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */,
 				46CCDFC324604F650052B3E3 /* AccountHelper.swift in Sources */,
+				4608C71B2487D8E300C4E28B /* SettingsTableViewController.swift in Sources */,
 				46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
 				463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */,

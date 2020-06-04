@@ -11,6 +11,18 @@ import UIKit
 
 // MARK: UIKit Extensions
 
+extension UIImageView {
+    
+    func maskCircle(_ forImage: UIImage) {
+        contentMode = .scaleAspectFill
+        layer.cornerRadius = frame.size.width / 2
+        layer.masksToBounds = false
+        clipsToBounds = true
+        
+        image = forImage
+    }
+}
+
 extension UIColor {
     
     class var peach: UIColor {
@@ -62,7 +74,8 @@ extension UIView {
                     cXAnchor: NSLayoutXAxisAnchor? = nil, cYAnchor: NSLayoutYAxisAnchor? = nil,
                     lAnchor: NSLayoutXAxisAnchor? = nil, leftConstant: CGFloat? = nil,
                     tAnchor: NSLayoutYAxisAnchor? = nil, topConstant: CGFloat? = nil,
-                    rAnchor: NSLayoutXAxisAnchor? = nil, rightConstant: CGFloat? = nil) {
+                    rAnchor: NSLayoutXAxisAnchor? = nil, rightConstant: CGFloat? = nil,
+                    bAnchor: NSLayoutYAxisAnchor? = nil, bottomConstant: CGFloat? = nil) {
         
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -162,7 +175,7 @@ extension UIViewController: UITextFieldDelegate {
              title = withTitle
             navigationController?.navigationBar.titleTextAttributes = [
                 NSAttributedString.Key.foregroundColor: UIColor.white,
-                NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 25.0)!
+                NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 24.0)!
             ]
         }
        
@@ -218,6 +231,10 @@ public extension UIButton {
         backgroundColor = withColor.withAlphaComponent(withAlpha)
     }
     
+    func set(color: UIColor, forImage: UIImage) {
+        setImage(forImage.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)
+        tintColor = color
+    }
 }
 
 public extension UITextField {

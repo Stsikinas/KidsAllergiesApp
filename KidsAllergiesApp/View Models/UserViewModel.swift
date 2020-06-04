@@ -9,8 +9,16 @@
 import Foundation
 
 
-public class UserViewModel {
+public struct UserViewModel {
     
+    var fullname: String
+    var email: String
+    var userCategory: String
     
+    init(user: User) {
+        self.fullname = TextUtils.shared.concat(values: [user.name, user.surname])
+        self.email = user.username
+        self.userCategory = user.userType
+    }
     
 }

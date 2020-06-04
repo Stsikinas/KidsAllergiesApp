@@ -14,7 +14,7 @@ class RecipesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         
-        setupNavigation(withImage: UIImage(named: "recipes_title.png"))
+        setupNavigation(withTitle: "Recipes")
     }
 
     // MARK: - Table view data source
