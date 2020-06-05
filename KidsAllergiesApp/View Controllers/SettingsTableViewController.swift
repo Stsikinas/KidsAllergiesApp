@@ -18,6 +18,7 @@ class SettingsTableViewController: UITableViewController {
         
         setupNavigation(withTitle: "My Account")
         setupTableViewProperties()
+        preventBounce()
         tableView.register(AvatarTableViewCell.self, forCellReuseIdentifier: avatarCell)
         
         

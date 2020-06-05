@@ -65,6 +65,11 @@ extension UIColor {
             return UIColor(red: 0.71, green: 0.51, blue: 0.514, alpha: 1.0)
         }
     }
+    class var darkCyanGreen: UIColor {
+        get {
+            return UIColor(red: 0.184, green: 0.31, blue: 0.247, alpha: 1.0)
+        }
+    }
 }
 
 extension UIView {
@@ -120,6 +125,13 @@ extension UIView {
                 rightAnchor.constraint(equalTo: rAnchor!, constant: rightConstant!).isActive = true
             }
         }
+        if bAnchor != nil {
+            if bottomConstant == nil {
+                bottomAnchor.constraint(equalTo: bAnchor!, constant: 0).isActive = true
+            } else {
+                bottomAnchor.constraint(equalTo: bAnchor!, constant: bottomConstant!).isActive = true
+            }
+        }
     }
     
     func cardView(ofRadius: CGFloat, withShadow: UIColor? = nil) {
@@ -139,6 +151,11 @@ extension UITableViewController {
     func setupTableViewProperties() {
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
+    }
+    
+    func preventBounce() {
+        tableView.bounces = false
+        tableView.alwaysBounceVertical = false
     }
     
 }

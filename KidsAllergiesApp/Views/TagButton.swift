@@ -61,5 +61,11 @@ class TagButton: UIButton {
             break
         }
     }
+    
+    /// Set background color and text color of chip based on User Category
+    func updateButtonColor(_ forUserCategory: UserCategory) {
+        backgroundColor = UIColor.darkCyanGreen
+        setTitleColor(.white, for: .normal)
+    }
 
 }

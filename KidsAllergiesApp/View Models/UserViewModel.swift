@@ -13,12 +13,14 @@ public struct UserViewModel {
     
     var fullname: String
     var email: String
-    var userCategory: String
+    var userChip: String
+    var category: UserCategory
     
     init(user: User) {
         self.fullname = TextUtils.shared.concat(values: [user.name, user.surname])
         self.email = user.username
-        self.userCategory = user.userType
+        self.userChip = user.userChip
+        self.category = user.userCat
     }
     
 }

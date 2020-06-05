@@ -276,8 +276,8 @@
 		46F797B72475434400B2AE94 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				46F797B82475434400B2AE94 /* Tip.swift */,
 				46F797B92475434400B2AE94 /* Categories.swift */,
+				46F797B82475434400B2AE94 /* Tip.swift */,
 				46F797BA2475434400B2AE94 /* User.swift */,
 			);
 			name = Models;

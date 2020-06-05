@@ -34,11 +34,16 @@ class AvatarTableViewCell: UITableViewCell {
         button.set(color: AppUtility().primaryColor, forImage: UIImage(named: "logout")!)
         return button
     }()
+    var userButton: TagButton = {
+        let button = TagButton()
+        button.setupButton()
+        return button
+    }()
     
     var userViewModel: UserViewModel! {
         didSet {
-            switch userViewModel.userCategory {
-            case UserCategory.Parent.rawValue:
+            switch userViewModel.category {
+            case UserCategory.Parent:
                 avatarImageView.maskCircle(UIImage(named: "male_avatar.png")!)
                 break
             default:
@@ -47,14 +52,15 @@ class AvatarTableViewCell: UITableViewCell {
             }
             userFullname.text = userViewModel.fullname
             userEmail.text = userViewModel.email
+            userButton.setTitle(userViewModel.userChip, for: .normal)
+            userButton.updateButtonColor(userViewModel.category)
         }
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        //selectionStyle = .none
-        
+        selectionStyle = .none
         
         addSubview(avatarImageView)
         avatarImageView.addAnchors(lAnchor: leftAnchor, leftConstant: 8, tAnchor: topAnchor, topConstant: 8)
@@ -67,6 +73,9 @@ class AvatarTableViewCell: UITableViewCell {
         
         addSubview(logoutButton)
         logoutButton.addAnchors(tAnchor: topAnchor, topConstant: 22, rAnchor: rightAnchor, rightConstant: -15)
+        
+        addSubview(userButton)
+        userButton.addAnchors(rAnchor: rightAnchor, rightConstant: -30, bAnchor: bottomAnchor, bottomConstant: -12)
     }
     
     required init?(coder: NSCoder) {
