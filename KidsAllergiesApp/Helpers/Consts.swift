@@ -7,10 +7,34 @@
 //
 
 import Foundation
-
+import UIKit
 
 // MARK: Notification Constants
 
 // MARK: User Defaults Keys
 let userCreated = "user-created"
 let loggedInUser = "user-logged-in"
+
+// MARK: Hero IDs
+let recipeImageID = "hero-recipe-image"
+let recipeTitleID = "hero-recipe-title"
+let recipes: [Recipe] = [Recipe(id: 0,
+                                title: "Chicken Curry",
+                                descr: "Bla Bla Bla Bla",
+                                prepTime: 65,
+                                ingredients: "rice;chicken;salt;paper",
+                                image: UIImage(named: "curry.png")!,
+                                isBrightImage: true,
+                                stars: 4,
+                                editor: "John Doe",
+                                isFavourite: true),
+                         Recipe(id: 1,
+                                title: "Vegetable Curry",
+                                descr: "Bla Bla Bla Bla",
+                                prepTime: 95,
+                                ingredients: "rice;potato;zucchini;salt;paper",
+                                image: UIImage(named: "veggy_curry.png")!,
+                                isBrightImage: false,
+                                stars: 5,
+                                editor: "John Doe",
+                                isFavourite: false)]

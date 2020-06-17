@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8py-9D-0XS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.67450980390000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="U1I-qI-Fp9" kind="relationship" relationship="viewControllers" id="HdG-88-Tuz"/>
@@ -80,6 +81,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="0Ab-E7-9Rr"/>
+                    <connections>
+                        <segue destination="u7c-ol-FXf" kind="show" identifier="showRecipe" id="o6c-Cv-INB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zl-ZE-hbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,6 +163,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EO-Lg-0Oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1439.1304347826087" y="-669.64285714285711"/>
+        </scene>
+        <!--Recipe View Controller-->
+        <scene sceneID="uGw-jG-ZRj">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="u7c-ol-FXf" customClass="RecipeViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gu-VX-EFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2um-Ij-Rw5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8rY-My-7lL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bP1-HO-XFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="799"/>
         </scene>
         <!--Tips-->
         <scene sceneID="gpu-Ki-9KS">

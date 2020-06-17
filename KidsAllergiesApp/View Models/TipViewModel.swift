@@ -17,7 +17,6 @@ public struct TipViewModel {
     let tipCategory: TipCategory
     let chip: String
     
-    // DI
     init(tip: Tip) {
         self.title = tip.tipTitle
         self.description = tip.tipDescr

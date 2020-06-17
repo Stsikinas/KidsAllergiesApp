@@ -71,4 +71,11 @@ struct AppUtility {
         return lower && upper && digit && minimum && maximum
     }
     
+    func timeToString(mins: TimeInterval) -> String {
+        let hours = Int(mins) / 60 % 60
+        let minutes = Int(mins) % 60
+        
+        return String(format: "%1i'%1i\"", hours, minutes)
+    }
+    
 }

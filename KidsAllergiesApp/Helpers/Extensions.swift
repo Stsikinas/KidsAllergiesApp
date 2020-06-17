@@ -13,6 +13,14 @@ import UIKit
 
 extension UIImageView {
     
+    func crossDisolve(to imageView: UIImageView) {
+        UIView.transition(from: self,
+                          to: imageView,
+                          duration: 0.95,
+                          options: .transitionCrossDissolve,
+                          completion: nil)
+    }
+    
     func maskCircle(_ forImage: UIImage) {
         contentMode = .scaleAspectFill
         layer.cornerRadius = frame.size.width / 2
@@ -25,6 +33,11 @@ extension UIImageView {
 
 extension UIColor {
     
+    class var lightBeige: UIColor {
+        get {
+            return UIColor(red: 0.984, green: 0.984, blue: 0.941, alpha: 1.0)
+        }
+    }
     class var peach: UIColor {
         get {
             return UIColor(red: 1.0, green: 0.898, blue: 0.706, alpha: 1.0)
@@ -112,7 +125,7 @@ extension UIView {
             }
         }
         if tAnchor != nil {
-            if tAnchor == nil {
+            if topConstant == nil {
                 topAnchor.constraint(equalTo: tAnchor!, constant: 0).isActive = true
             } else {
                 topAnchor.constraint(equalTo: tAnchor!, constant: topConstant!).isActive = true
@@ -162,6 +175,15 @@ extension UITableViewController {
 
 extension UIViewController: UITextFieldDelegate {
     
+    func addCancelButton() {
+        let cancelButton = UIBarButtonItem(image: UIImage(named: "go_back.png"), style: .plain, target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem = cancelButton
+    }
+    
+    @objc func goBack() {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
     // Add notification center to handle notifications
     public final var notificationCenter: NotificationCenter {
         get {
@@ -197,7 +219,9 @@ extension UIViewController: UITextFieldDelegate {
         }
        
         navigationController?.navigationBar.barTintColor = AppUtility().primaryColor
+        navigationController?.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar.isTranslucent = false
+        navigationController?.hero.isEnabled = true
         
     }
     
