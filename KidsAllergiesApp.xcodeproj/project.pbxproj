@@ -33,6 +33,9 @@
 		46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */; };
 		46D1D8B8247BEB6600EFB27B /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D1D8B7247BEB6600EFB27B /* Consts.swift */; };
 		46DBBA142462D88200520115 /* Resources_EN.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DBBA162462D88200520115 /* Resources_EN.strings */; };
+		46DE507C249A162500DF962A /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507B249A162500DF962A /* Posts.swift */; };
+		46DE507E249A23F800DF962A /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507D249A23F800DF962A /* PostListViewModel.swift */; };
+		46DE5080249A29EB00DF962A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507F249A29EB00DF962A /* PostTableViewCell.swift */; };
 		46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1C64A24751612001B96C0 /* UserViewModel.swift */; };
 		46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */; };
 		46EFAEBE247FED9C00EF670D /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */; };
@@ -100,6 +103,9 @@
 		46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46D1D8B7247BEB6600EFB27B /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46DBBA152462D88200520115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Resources_EN.strings; sourceTree = "<group>"; };
+		46DE507B249A162500DF962A /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		46DE507D249A23F800DF962A /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		46DE507F249A29EB00DF962A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		46E1C64A24751612001B96C0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
 		46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 		46CCDFBB246032930052B3E3 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				46DE507D249A23F800DF962A /* PostListViewModel.swift */,
 				46FFB4AC24938ECB0019E87A /* RecipeDetailViewModel.swift */,
 				46F3FDAB248A5AAF000F20CF /* RecipeListViewModel.swift */,
 				46EFAEBF247FF02500EF670D /* TipViewModel.swift */,
@@ -253,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */,
+				46DE507F249A29EB00DF962A /* PostTableViewCell.swift */,
 				46FFB4AE249391CD0019E87A /* RecipeDetailView.swift */,
 				46F2F596248A1F27006019F1 /* RecipesTableViewCell.swift */,
 				4641955124864A2200CC6E3E /* TagButton.swift */,
@@ -294,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				46F797B92475434400B2AE94 /* Categories.swift */,
+				46DE507B249A162500DF962A /* Posts.swift */,
 				46F2F594248A1D85006019F1 /* Recipe.swift */,
 				46F797B82475434400B2AE94 /* Tip.swift */,
 				46F797BA2475434400B2AE94 /* User.swift */,
@@ -560,6 +569,7 @@
 				46F797BB2475434400B2AE94 /* Tip.swift in Sources */,
 				46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */,
 				4641955224864A2200CC6E3E /* TagButton.swift in Sources */,
+				46DE507C249A162500DF962A /* Posts.swift in Sources */,
 				46FFB4AF249391CD0019E87A /* RecipeDetailView.swift in Sources */,
 				46FFB4B12493BBB30019E87A /* RecipeViewController.swift in Sources */,
 				4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */,
@@ -576,8 +586,10 @@
 				4608C71B2487D8E300C4E28B /* SettingsTableViewController.swift in Sources */,
 				46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */,
 				46F2F597248A1F27006019F1 /* RecipesTableViewCell.swift in Sources */,
+				46DE507E249A23F800DF962A /* PostListViewModel.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
 				463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */,
+				46DE5080249A29EB00DF962A /* PostTableViewCell.swift in Sources */,
 				46420124246D7E9600A304C6 /* Extensions.swift in Sources */,
 				46F797BD2475434400B2AE94 /* User.swift in Sources */,
 				46420122246D780500A304C6 /* TextUtils.swift in Sources */,

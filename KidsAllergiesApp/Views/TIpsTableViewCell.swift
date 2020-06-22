@@ -27,9 +27,9 @@ class TipsTableViewCell: UITableViewCell {
     }()
     var descriptionLabel: UILabel = {
         let label = UILabel()
-         label.textColor = .black
-         label.font = UIFont(name: "AmericanTypewriter", size: 16.0)
-         label.numberOfLines = 3
+        label.textColor = .black
+        label.font = UIFont(name: "Avenir-Book", size: 16.0)
+        label.numberOfLines = 3
          return label
     }()
     var tipImageView: UIImageView = {

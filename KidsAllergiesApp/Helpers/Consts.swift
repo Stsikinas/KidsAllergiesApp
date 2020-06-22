@@ -18,6 +18,8 @@ let loggedInUser = "user-logged-in"
 // MARK: Hero IDs
 let recipeImageID = "hero-recipe-image"
 let recipeTitleID = "hero-recipe-title"
+
+// MARK: Demo Models
 let recipes: [Recipe] = [Recipe(id: 0,
                                 title: "Chicken Curry",
                                 descr: "Bla Bla Bla Bla",
@@ -38,3 +40,10 @@ let recipes: [Recipe] = [Recipe(id: 0,
                                 stars: 5,
                                 editor: "John Doe",
                                 isFavourite: false)]
+let posts: [Post] = [Post(id: 0,
+                          postText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum con.",
+                          editor: "John Doe",
+                          commentsNum: 12,
+                          likesNum: 88,
+                          placeholderImage: UIImage(named: "placeholder.png")!,
+                          date: .yesterday)]

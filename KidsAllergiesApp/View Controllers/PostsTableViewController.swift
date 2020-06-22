@@ -9,23 +9,46 @@
 import UIKit
 
 class PostsTableViewController: UITableViewController {
+    
+    // MARK: - Private Variables
+    private final let cellID = "postListItem"
+    private var postsListViewModel = [PostListViewModel]()
+    private var selectedID = Int(0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         setupNavigation(withTitle: "Our Community")
+        setupTableViewProperties()
+        tableView.register(PostTableViewCell.self, forCellReuseIdentifier: cellID)
+        setupPosts()
+    }
+    
+    // MARK: Setup Methods
+    private func setupPosts() {
+        for post in posts {
+            postsListViewModel.append(PostListViewModel(post: post))
+        }
+        
+        tableView.reloadData()
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    // MARK: Overriden Methods
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return postsListViewModel.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 280
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! PostTableViewCell
+        cell.postListViewModel = postsListViewModel[indexPath.row]
+        
+        return cell
     }
 }
