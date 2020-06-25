@@ -87,6 +87,13 @@ extension UIColor {
 
 extension UIView {
     
+    func zoomInAnimation() {
+        transform = CGAffineTransform(scaleX: 0.0001, y: 0.0001)
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            self?.transform = CGAffineTransform.identity
+        })
+    }
+    
     func addBackground(color: UIColor, withAlpha: CGFloat) {
         backgroundColor = color.withAlphaComponent(withAlpha)
     }

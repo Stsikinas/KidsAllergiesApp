@@ -8,8 +8,7 @@
 
 import UIKit
 
-class TipViewController: UIViewController {
-    
+class TipViewController: UIViewController, dismissDetailViewDelegate {
     
     // MARK: - Public Variables
     var selectedID: Int?
@@ -30,9 +29,20 @@ class TipViewController: UIViewController {
         tipDetailViewModel = TipDetailViewModel(tipDetailItem: tips.first(where: { $0.id == selectedID })!)
         tipDetailViewModel?.setBackground(ofView: view, 0.7)
         let detailView = TipDetailView(frame: view.frame)
+        detailView.delegate = self
         detailView.tipDetailViewModel = tipDetailViewModel
         view.addSubview(detailView)
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.zoomInAnimation()
+    }
+    
+    // MARK: Update Methods
+    func dismissView() {
+        dismiss(animated: false, completion: nil)
     }
 
 }

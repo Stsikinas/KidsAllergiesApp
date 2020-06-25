@@ -170,9 +170,9 @@
         <!--Tip View Controller-->
         <scene sceneID="Oaz-1t-VbY">
             <objects>
-                <viewController id="okR-tU-Qen" customClass="TipViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="okR-tU-Qen" customClass="TipViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NGQ-6W-tJP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="n7f-kh-vjj"/>
