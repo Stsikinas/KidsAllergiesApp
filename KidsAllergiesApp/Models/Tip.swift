@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 struct Tip {
+    var id: Int
     var tipTitle: String
     var tipDescr: String
     var tipImage: UIImage

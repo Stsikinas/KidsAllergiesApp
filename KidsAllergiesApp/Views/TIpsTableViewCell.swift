@@ -44,7 +44,7 @@ class TipsTableViewCell: UITableViewCell {
         return button
     }()
     
-    var tipViewModel: TipViewModel! {
+    var tipViewModel: TipListViewModel! {
         didSet {
             titleLabel.text = tipViewModel.title
             descriptionLabel.text = tipViewModel.description

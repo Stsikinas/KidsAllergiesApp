@@ -87,6 +87,10 @@ extension UIColor {
 
 extension UIView {
     
+    func addBackground(color: UIColor, withAlpha: CGFloat) {
+        backgroundColor = color.withAlphaComponent(withAlpha)
+    }
+    
     func addAnchors(wAnchor: NSLayoutDimension? = nil, _ wMulti: CGFloat? = nil,
                     hAnchor: NSLayoutDimension? = nil,_ hMulti: CGFloat? = nil,
                     cXAnchor: NSLayoutXAxisAnchor? = nil, cYAnchor: NSLayoutYAxisAnchor? = nil,
@@ -221,7 +225,6 @@ extension UIViewController: UITextFieldDelegate {
         navigationController?.navigationBar.barTintColor = AppUtility().primaryColor
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.hero.isEnabled = true
         
     }
     

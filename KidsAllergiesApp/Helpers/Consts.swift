@@ -15,10 +15,6 @@ import UIKit
 let userCreated = "user-created"
 let loggedInUser = "user-logged-in"
 
-// MARK: Hero IDs
-let recipeImageID = "hero-recipe-image"
-let recipeTitleID = "hero-recipe-title"
-
 // MARK: Demo Models
 let recipes: [Recipe] = [Recipe(id: 0,
                                 title: "Chicken Curry",
@@ -47,3 +43,33 @@ let posts: [Post] = [Post(id: 0,
                           likesNum: 88,
                           placeholderImage: UIImage(named: "placeholder.png")!,
                           date: .yesterday)]
+let tips: [Tip] = [Tip(id: 0,
+                       tipTitle: "Lorem Ipsum",
+                       tipDescr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla.",
+                       tipImage: UIImage(named: "mom_tips.png")!,
+                       tipCat: TipCategory.Mom),
+                   Tip(id: 1,
+                       tipTitle: "Lorem Ipsum",
+                       tipDescr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla.",
+                       tipImage: UIImage(named: "mom_tips.png")!,
+                       tipCat: TipCategory.Baby),
+                   Tip(id: 2,
+                       tipTitle: "Lorem Ipsum",
+                       tipDescr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla.",
+                       tipImage: UIImage(named: "mom_tips.png")!,
+                       tipCat: TipCategory.Products),
+                   Tip(id: 3,
+                       tipTitle: "Lorem Ipsum",
+                       tipDescr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla.",
+                       tipImage: UIImage(named: "mom_tips.png")!,
+                       tipCat: TipCategory.Shops),
+                   Tip(id: 4,
+                       tipTitle: "Lorem Ipsum",
+                       tipDescr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla.",
+                       tipImage: UIImage(named: "mom_tips.png")!,
+                       tipCat: TipCategory.Medicines),
+                   Tip(id: 5,
+                       tipTitle: "Lorem Ipsum",
+                       tipDescr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla.",
+                       tipImage: UIImage(named: "mom_tips.png")!,
+                       tipCat: TipCategory.Development)]

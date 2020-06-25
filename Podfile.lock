@@ -1,20 +1,16 @@
 PODS:
   - Alamofire (5.1.0)
-  - Hero (1.5.0)
 
 DEPENDENCIES:
   - Alamofire
-  - Hero
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - Hero
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
-  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
 
-PODFILE CHECKSUM: 18b9831b56569fc5443ce1d6209405aaf7964290
+PODFILE CHECKSUM: c00c95464fd88e1a75ee5bc2a9d6bf77d18c2cbb
 
 COCOAPODS: 1.8.4

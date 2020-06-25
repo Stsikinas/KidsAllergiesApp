@@ -41,7 +41,6 @@ class RecipesTableViewController: UITableViewController, ClickedFavouriteDelegat
         
         tableView.reloadData()
     }
-
     
     // MARK: Override Methods
     
@@ -73,7 +72,6 @@ class RecipesTableViewController: UITableViewController, ClickedFavouriteDelegat
                 return
             }
             detailVC.selectedID = self.selectedID
-            detailVC.isHeroEnabled = true
         }
     }
     

@@ -20,7 +20,6 @@ class RecipeDetailView: UIView {
     
     var recipeImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.heroID = recipeImageID
         return imageView
     }()
     
@@ -35,8 +34,6 @@ class RecipeDetailView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        hero.isEnabled = true
-        hero.modifiers = [.fade]
         addSubview(scrollView)
         scrollView.addAnchors(wAnchor: widthAnchor, 1.0, hAnchor: heightAnchor, 1.0, cXAnchor: centerXAnchor, cYAnchor: centerYAnchor)
         scrollView.addSubview(recipeImage)

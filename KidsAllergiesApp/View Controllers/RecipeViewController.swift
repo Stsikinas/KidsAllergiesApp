@@ -34,6 +34,5 @@ class RecipeViewController: UIViewController {
         tabBarController?.tabBar.isHidden = true
         addCancelButton()
         setupNavigation(withTitle: recipeDetailViewModel?.title)
-        hero.isEnabled = true
     }
 }

@@ -10,8 +10,10 @@ import UIKit
 
 class TipsTableViewController: UITableViewController {
     
-    private var tipsViewModel = [TipViewModel]()
+    // MARK: Private Variables
+    private var tipsViewModel = [TipListViewModel]()
     private final let cellID = "tipsCell"
+    private var selectedID = Int(0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,22 +22,16 @@ class TipsTableViewController: UITableViewController {
         navigationController?.navigationBar.tintColor = .white
         setupTableViewProperties()
         tableView.register(TipsTableViewCell.self, forCellReuseIdentifier: cellID)
-        setupTips()
+        setupTipsList()
     }
     
     // MARK: Setup Methods
-    private func setupTips() {
-        let title = "Lorem Ipsum"
-        let descr = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nisl a augue interdum consequat. Donec pellentesque gravida leo, ac malesuada metus pharetra nec. Etiam in fringilla odio, vel sagittis nulla. Proin volutpat gravida tortor non bibendum. Duis vel metus at quam imperdiet varius consectetur eget mauris. Sed vel efficitur sapien. Mauris bibendum sed ipsum quis hendrerit. Donec vestibulum iaculis augue. Cras ut iaculis elit. Praesent a mollis velit. Donec ac elit viverra, rhoncus sem sit amet, viverra metus. Proin feugiat, velit eget cursus condimentum, libero lectus aliquam quam, quis vehicula orci diam eu nulla."
-        let cat = TipCategory.Mom
-        let tipImage = UIImage(named: "mom_tips.png")
-        let tip = Tip(tipTitle: title, tipDescr: descr, tipImage: tipImage!, tipCat: cat)
-        tipsViewModel.append(TipViewModel(tip: tip))
-        tipsViewModel.append(TipViewModel(tip: Tip(tipTitle: title, tipDescr: descr, tipImage: tipImage!, tipCat: .Baby)))
-        tipsViewModel.append(TipViewModel(tip: Tip(tipTitle: title, tipDescr: descr, tipImage: tipImage!, tipCat: .Products)))
-        tipsViewModel.append(TipViewModel(tip: Tip(tipTitle: title, tipDescr: descr, tipImage: tipImage!, tipCat: .Shops)))
-        tipsViewModel.append(TipViewModel(tip: Tip(tipTitle: title, tipDescr: descr, tipImage: tipImage!, tipCat: .Medicines)))
-        tipsViewModel.append(TipViewModel(tip: Tip(tipTitle: title, tipDescr: descr, tipImage: tipImage!, tipCat: .Development)))
+    
+    private func setupTipsList() {
+        for tip in tips {
+            tipsViewModel.append(TipListViewModel(tip: tip))
+        }
+        
         tableView.reloadData()
     }
 
@@ -56,6 +52,20 @@ class TipsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedID = tipsViewModel[indexPath.row].id
+        performSegue(withIdentifier: "showTip", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showTip" {
+            guard let detailVC = segue.destination as? TipViewController else {
+                return
+            }
+            detailVC.selectedID = self.selectedID
+        }
     }
     
     

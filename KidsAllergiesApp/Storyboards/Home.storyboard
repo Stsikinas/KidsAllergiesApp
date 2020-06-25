@@ -159,10 +159,28 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="NOg-2b-4iy"/>
+                    <connections>
+                        <segue destination="okR-tU-Qen" kind="showDetail" identifier="showTip" id="xWC-Fp-KRY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EO-Lg-0Oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1439.1304347826087" y="-669.64285714285711"/>
+        </scene>
+        <!--Tip View Controller-->
+        <scene sceneID="Oaz-1t-VbY">
+            <objects>
+                <viewController id="okR-tU-Qen" customClass="TipViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NGQ-6W-tJP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="n7f-kh-vjj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isv-0n-8am" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349" y="-668"/>
         </scene>
         <!--Recipe View Controller-->
         <scene sceneID="uGw-jG-ZRj">

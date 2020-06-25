@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Hero
 
 protocol ClickedFavouriteDelegate {
     func cell(_ tableViewCell: RecipesTableViewCell, tappedModel: RecipeListViewModel)
@@ -21,7 +20,6 @@ class RecipesTableViewCell: UITableViewCell {
     var recipeImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
-        imageView.heroID = recipeImageID
         return imageView
     }()
     var recipeTitle: UILabel = {
@@ -30,7 +28,6 @@ class RecipesTableViewCell: UITableViewCell {
         titleLabel.textColor = .darkGray
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 0
-        titleLabel.heroID = recipeTitleID
         return titleLabel
     }()
     var favouriteButton: UIButton = {
@@ -54,7 +51,6 @@ class RecipesTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        hero.isEnabled = true
         selectionStyle = .none
         backgroundColor = .clear
         addSubview(recipeImage)

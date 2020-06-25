@@ -1,5 +1,5 @@
 //
-//  TipViewModel.swift
+//  TipListViewModel.swift
 //  KidsAllergiesApp
 //
 //  Created by Epsilon User on 28/5/20.
@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-public struct TipViewModel {
+public struct TipListViewModel {
     
+    let id: Int
     let title: String
     let description: String
     let image: UIImage
@@ -18,6 +19,7 @@ public struct TipViewModel {
     let chip: String
     
     init(tip: Tip) {
+        self.id = tip.id
         self.title = tip.tipTitle
         self.description = tip.tipDescr
         self.image = tip.tipImage
