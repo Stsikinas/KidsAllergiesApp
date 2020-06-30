@@ -11,6 +11,24 @@ import UIKit
 
 // MARK: UIKit Extensions
 
+extension UILabel {
+    
+    func set(text: String, withImage: UIImage) {
+        let attachment = NSTextAttachment()
+        attachment.image = withImage
+        let offsetY: CGFloat = -5
+        attachment.bounds = CGRect(x: 0, y: offsetY, width: attachment.image!.size.width, height: attachment.image!.size.height)
+        let stringAttachment = NSAttributedString(attachment: attachment)
+        let finalString = NSMutableAttributedString(string: "")
+        finalString.append(stringAttachment)
+        let textToAttach = NSAttributedString(string: text)
+        finalString.append(textToAttach)
+        textAlignment = .center
+        attributedText = finalString
+    }
+    
+}
+
 extension UIImageView {
     
     func crossDisolve(to imageView: UIImageView) {
@@ -21,6 +39,7 @@ extension UIImageView {
                           completion: nil)
     }
     
+    /// Make circle image view
     func maskCircle(_ forImage: UIImage) {
         contentMode = .scaleAspectFill
         layer.cornerRadius = frame.size.width / 2
@@ -86,6 +105,18 @@ extension UIColor {
 }
 
 extension UIView {
+    
+    func fadeIn(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseIn, animations: {
+            self.alpha = 1.0
+    }, completion: completion)  }
+    
+    func fadeOut(_ duration: TimeInterval = 0.5, delay: TimeInterval = 1.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseIn, animations: {
+             self.alpha = 0.0
+     }, completion: completion)
+    }
+    
     
     func zoomInAnimation() {
         transform = CGAffineTransform(scaleX: 0.0001, y: 0.0001)
@@ -186,13 +217,29 @@ extension UITableViewController {
 
 extension UIViewController: UITextFieldDelegate {
     
+    /// Add gesture recognizer to dismiss keyboard on tap
+    func hideKeyboardTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    /// Implementation of easily adding right bar button item
+    func addRightBarButton(withImage: UIImage) {
+        let rightItem = UIBarButtonItem(image: withImage, style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = rightItem
+    }
+    
     func addCancelButton() {
         let cancelButton = UIBarButtonItem(image: UIImage(named: "go_back.png"), style: .plain, target: self, action: #selector(goBack))
         navigationItem.leftBarButtonItem = cancelButton
     }
     
+    /// Obj-C method to move to previous navigation controller
     @objc func goBack() {
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     // Add notification center to handle notifications
@@ -289,7 +336,8 @@ public extension UIButton {
 }
 
 public extension UITextField {
-    
+
+    /// Add toggle to show/hide secure text
     func addToggle(_ image: UIImage) -> UIButton {
         rightViewMode = .unlessEditing
         let toggleButton = UIButton(frame: CGRect(x: frame.size.width - 25, y: 5, width: 15, height: 25))

@@ -10,18 +10,18 @@ import UIKit
 
 class AvatarTableViewCell: UITableViewCell {
 
-    var avatarImageView: UIImageView = {
+    lazy var avatarImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         return imageView
     }()
-    var userFullname: UILabel = {
+    lazy var userFullname: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AmericanTypewriter", size: 16.0)
         label.numberOfLines = 0
         label.textAlignment = .left
         return label
     }()
-    var userEmail: UILabel = {
+    lazy var userEmail: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AmericanTypewriter-CondensedLight", size: 14.0)
         label.textColor = .systemGray
@@ -29,12 +29,12 @@ class AvatarTableViewCell: UITableViewCell {
         label.numberOfLines = 1
         return label
     }()
-    var logoutButton: UIButton = {
+    lazy var logoutButton: UIButton = {
         let button = UIButton(type: .custom)
         button.set(color: AppUtility().primaryColor, forImage: UIImage(named: "logout")!)
         return button
     }()
-    var userButton: TagButton = {
+    lazy var userButton: TagButton = {
         let button = TagButton()
         button.setupButton()
         return button

@@ -18,13 +18,13 @@ class TipDetailView: UIView {
     var delegate: dismissDetailViewDelegate?
     
     // MARK: Subview Initializers
-    var scrollView: UIScrollView = {
+    lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.alwaysBounceVertical = true
         scrollView.backgroundColor = .lightBeige
         return scrollView
     }()
-    var titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
        let label = UILabel()
         label.textColor = .black
         label.font = UIFont(name: "AmericanTypewriter", size: 32.0)
@@ -32,13 +32,13 @@ class TipDetailView: UIView {
         label.textAlignment = .left
         return label
     }()
-    var tipText: UILabel = {
+    lazy var tipText: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AmericanTypewriter", size: 18.0)
         label.numberOfLines = 0
         return label
     }()
-    var closeButton: UIButton = {
+    lazy var closeButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 120))
         button.setTitle("Got it!", for: .normal)
         return button

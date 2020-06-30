@@ -11,14 +11,14 @@ import UIKit
 class RecipeDetailView: UIView {
 
     // MARK: Subview Initializers
-    var scrollView: UIScrollView = {
+    lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.alwaysBounceVertical = true
         scrollView.backgroundColor = .lightBeige
         return scrollView
     }()
     
-    var recipeImage: UIImageView = {
+    lazy var recipeImage: UIImageView = {
         let imageView = UIImageView()
         return imageView
     }()

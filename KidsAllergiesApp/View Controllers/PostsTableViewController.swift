@@ -20,9 +20,11 @@ class PostsTableViewController: UITableViewController {
 
         
         setupNavigation(withTitle: "Our Community")
+        addRightBarButton(withImage: UIImage(named: "add")!)
         setupTableViewProperties()
         tableView.register(PostTableViewCell.self, forCellReuseIdentifier: cellID)
         setupPosts()
+        hideKeyboardTap()
     }
     
     // MARK: Setup Methods
@@ -39,10 +41,6 @@ class PostsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return postsListViewModel.count
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 280
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

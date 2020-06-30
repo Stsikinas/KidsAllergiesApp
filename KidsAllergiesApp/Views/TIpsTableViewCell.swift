@@ -10,14 +10,14 @@ import UIKit
 
 class TipsTableViewCell: UITableViewCell {
 
-    var textView: UIView = {
+    lazy var textView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.cardView(ofRadius: 12.0, withShadow: UIColor.gray)
         return view
     }()
     
-    var titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
        let label = UILabel()
         label.textColor = .black
         label.font = UIFont(name: "AmericanTypewriter", size: 28.0)
@@ -25,20 +25,20 @@ class TipsTableViewCell: UITableViewCell {
         label.textAlignment = .center
         return label
     }()
-    var descriptionLabel: UILabel = {
+    lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.font = UIFont(name: "Avenir-Book", size: 16.0)
         label.numberOfLines = 3
          return label
     }()
-    var tipImageView: UIImageView = {
+    lazy var tipImageView: UIImageView = {
        let imageView = UIImageView()
         imageView.cardView(ofRadius: 15.0)
         imageView.contentMode = .scaleToFill
         return imageView
     }()
-    var tipButton: TagButton = {
+    lazy var tipButton: TagButton = {
         let button = TagButton()
         button.setupButton()
         return button

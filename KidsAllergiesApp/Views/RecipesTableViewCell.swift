@@ -17,12 +17,12 @@ class RecipesTableViewCell: UITableViewCell {
     var delegate: ClickedFavouriteDelegate?
     
     // MARK: Subview Initializers
-    var recipeImage: UIImageView = {
+    lazy var recipeImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
         return imageView
     }()
-    var recipeTitle: UILabel = {
+    lazy var recipeTitle: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = UIFont(name: "Futura-Medium", size: 22.0)
         titleLabel.textColor = .darkGray
@@ -30,7 +30,7 @@ class RecipesTableViewCell: UITableViewCell {
         titleLabel.numberOfLines = 0
         return titleLabel
     }()
-    var favouriteButton: UIButton = {
+    lazy var favouriteButton: UIButton = {
         let button = UIButton(type: .custom)
         return button
     }()

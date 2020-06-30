@@ -15,6 +15,5 @@ public struct Post {
     var editor: String
     var commentsNum: Int
     var likesNum: Int
-    var placeholderImage: UIImage
     var date: Date
 }
