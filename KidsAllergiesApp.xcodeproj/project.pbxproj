@@ -27,7 +27,7 @@
 		46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C8BCED246EAFD6006E42F4 /* Home.storyboard */; };
 		46CCDF8B24602FF40052B3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */; };
 		46CCDF8D24602FF40052B3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */; };
-		46CCDF9424602FF50052B3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDF9324602FF50052B3E3 /* Assets.xcassets */; };
+		46CCDF9424602FF50052B3E3 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDF9324602FF50052B3E3 /* ImageAssets.xcassets */; };
 		46CCDF9724602FF50052B3E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDF9524602FF50052B3E3 /* LaunchScreen.storyboard */; };
 		46CCDFA224602FF60052B3E3 /* KidsAllergiesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFA124602FF60052B3E3 /* KidsAllergiesAppTests.swift */; };
 		46CCDFAD24602FF60052B3E3 /* KidsAllergiesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFAC24602FF60052B3E3 /* KidsAllergiesAppUITests.swift */; };
@@ -36,6 +36,7 @@
 		46CCDFC52460530B0052B3E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC42460530B0052B3E3 /* MainViewController.swift */; };
 		46CCDFC7246053BF0052B3E3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */; };
 		46D1D8B8247BEB6600EFB27B /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D1D8B7247BEB6600EFB27B /* Consts.swift */; };
+		46D93AF924B365DF008951F2 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D93AF824B365DF008951F2 /* ColorAssets.xcassets */; };
 		46DBBA142462D88200520115 /* Resources_EN.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DBBA162462D88200520115 /* Resources_EN.strings */; };
 		46DE507C249A162500DF962A /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507B249A162500DF962A /* Posts.swift */; };
 		46DE507E249A23F800DF962A /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507D249A23F800DF962A /* PostListViewModel.swift */; };
@@ -97,7 +98,7 @@
 		46CCDF8724602FF40052B3E3 /* Kids Allergies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Allergies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46CCDF9324602FF50052B3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46CCDF9324602FF50052B3E3 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
 		46CCDF9624602FF50052B3E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46CCDF9824602FF50052B3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CCDF9D24602FF60052B3E3 /* KidsAllergiesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsAllergiesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +112,7 @@
 		46CCDFC42460530B0052B3E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		46CCDFC6246053BF0052B3E3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46D1D8B7247BEB6600EFB27B /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		46D93AF824B365DF008951F2 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
 		46DBBA152462D88200520115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Resources_EN.strings; sourceTree = "<group>"; };
 		46DE507B249A162500DF962A /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		46DE507D249A23F800DF962A /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
@@ -203,10 +205,10 @@
 		46CCDF8924602FF40052B3E3 /* KidsAllergiesApp */ = {
 			isa = PBXGroup;
 			children = (
+				46D93AF724B365C0008951F2 /* Asset */,
 				46CCDF9824602FF50052B3E3 /* Info.plist */,
 				46CCDF8A24602FF40052B3E3 /* AppDelegate.swift */,
 				46CCDF8C24602FF40052B3E3 /* SceneDelegate.swift */,
-				46CCDF9324602FF50052B3E3 /* Assets.xcassets */,
 				46CCDFC124604F500052B3E3 /* Helpers */,
 				46CCDF9524602FF50052B3E3 /* LaunchScreen.storyboard */,
 				46DBBA172462D8EB00520115 /* Localization */,
@@ -303,6 +305,15 @@
 				46D1D8B7247BEB6600EFB27B /* Consts.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46D93AF724B365C0008951F2 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				46D93AF824B365DF008951F2 /* ColorAssets.xcassets */,
+				46CCDF9324602FF50052B3E3 /* ImageAssets.xcassets */,
+			);
+			path = Asset;
 			sourceTree = "<group>";
 		};
 		46DBBA172462D8EB00520115 /* Localization */ = {
@@ -449,7 +460,8 @@
 				46C8BCEE246EAFD6006E42F4 /* Home.storyboard in Resources */,
 				46DBBA142462D88200520115 /* Resources_EN.strings in Resources */,
 				46CCDF9724602FF50052B3E3 /* LaunchScreen.storyboard in Resources */,
-				46CCDF9424602FF50052B3E3 /* Assets.xcassets in Resources */,
+				46D93AF924B365DF008951F2 /* ColorAssets.xcassets in Resources */,
+				46CCDF9424602FF50052B3E3 /* ImageAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,12 +21,11 @@ class TipDetailView: UIView {
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.alwaysBounceVertical = true
-        scrollView.backgroundColor = .lightBeige
+        scrollView.backgroundColor = UIColor(named: "tips_background")
         return scrollView
     }()
     lazy var titleLabel: UILabel = {
        let label = UILabel()
-        label.textColor = .black
         label.font = UIFont(name: "AmericanTypewriter", size: 32.0)
         label.numberOfLines = 0
         label.textAlignment = .left
