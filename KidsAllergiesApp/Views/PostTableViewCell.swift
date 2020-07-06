@@ -149,13 +149,13 @@ class PostTableViewCell: UITableViewCell, UITextFieldDelegate {
     }
     
     // MARK: Animations
-    /// Animate new comment sequence (preffered from fadeIn/Out of extension, to avoid many {})
+    /// Animate new comment sequence (preffered from fadeIn/Out of extension, to avoid excessive nesting)
     private func animateNewComment(textField: UITextField) {
-        UIView.animateKeyframes(withDuration: 2.0, delay: 0, options: [], animations: {
-            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.5, animations: {
+        UIView.animateKeyframes(withDuration: 1.5, delay: 0, options: [], animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 1.0, animations: {
                 textField.alpha = 0.0
             })
-            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 1.0, animations: {
                 self.commentPostedLabel.alpha = 1.0
             })
         }, completion: { _ in

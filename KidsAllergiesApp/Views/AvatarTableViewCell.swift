@@ -10,6 +10,7 @@ import UIKit
 
 class AvatarTableViewCell: UITableViewCell {
 
+    // MARK: Subview Initializers
     lazy var avatarImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         return imageView
@@ -57,6 +58,7 @@ class AvatarTableViewCell: UITableViewCell {
         }
     }
     
+    // MARK: Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         

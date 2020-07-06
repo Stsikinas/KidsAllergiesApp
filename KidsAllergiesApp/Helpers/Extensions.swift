@@ -11,6 +11,7 @@ import UIKit
 
 // MARK: UIKit Extensions
 
+// MARK: UILabel
 extension UILabel {
     
     func set(text: String, withImage: UIImage) {
@@ -29,6 +30,7 @@ extension UILabel {
     
 }
 
+// MARK: UIImageView
 extension UIImageView {
     
     func crossDisolve(to imageView: UIImageView) {
@@ -50,7 +52,14 @@ extension UIImageView {
     }
 }
 
+// MARK: UIColor
 extension UIColor {
+    
+    class var paleRed: UIColor {
+        get {
+            return UIColor(red: 1.0, green: 0.604, blue: 0.604, alpha: 1.0)
+        }
+    }
     
     class var lightBeige: UIColor {
         get {
@@ -104,6 +113,7 @@ extension UIColor {
     }
 }
 
+// MARK: UIView
 extension UIView {
     
     func fadeIn(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
@@ -201,6 +211,7 @@ extension UIView {
     
 }
 
+// MARK: UITableViewController
 extension UITableViewController {
     
     func setupTableViewProperties() {
@@ -215,7 +226,22 @@ extension UITableViewController {
     
 }
 
+// MARK: UIViewController
 extension UIViewController: UITextFieldDelegate {
+    
+    /// Make custom navigation bar for modal views (mainly)
+    func addNavigationBar(rightBarButton: UIBarButtonItem? = nil, leftBarButton: UIBarButtonItem? = nil, title: String? = nil) {
+        
+        guard let _ = navigationController, let _ = navigationController?.navigationBar else {
+            return
+        }
+        
+        navigationItem.title = title
+        navigationItem.leftBarButtonItem = leftBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
+        
+        
+    }
     
     /// Add gesture recognizer to dismiss keyboard on tap
     func hideKeyboardTap() {
@@ -313,9 +339,13 @@ extension UIViewController: UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    @objc func cancelView() {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
-
+// MARK: UIButton
 public extension UIButton {
     
     func makeOvalBtn(_ withColor: UIColor, withAlpha: CGFloat) {
@@ -335,6 +365,7 @@ public extension UIButton {
     }
 }
 
+// MARK: UITextField
 public extension UITextField {
 
     /// Add toggle to show/hide secure text

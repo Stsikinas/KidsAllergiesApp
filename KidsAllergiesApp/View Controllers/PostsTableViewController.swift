@@ -8,19 +8,22 @@
 
 import UIKit
 
-class PostsTableViewController: UITableViewController {
+class PostsTableViewController: UITableViewController, newPostReceivedDelegate {
     
     // MARK: - Private Variables
     private final let cellID = "postListItem"
     private var postsListViewModel = [PostListViewModel]()
-    private var selectedID = Int(0)
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         setupNavigation(withTitle: "Our Community")
         addRightBarButton(withImage: UIImage(named: "add")!)
+        guard let newPostBarButton = navigationItem.rightBarButtonItem else {
+            return
+        }
+        newPostBarButton.action = #selector(openNewPost)
         setupTableViewProperties()
         tableView.register(PostTableViewCell.self, forCellReuseIdentifier: cellID)
         setupPosts()
@@ -29,6 +32,10 @@ class PostsTableViewController: UITableViewController {
     
     // MARK: Setup Methods
     private func setupPosts() {
+        // Update View model with new data
+        if postsListViewModel.count != 0 {
+            postsListViewModel.removeAll()
+        }
         for post in posts {
             postsListViewModel.append(PostListViewModel(post: post))
         }
@@ -49,4 +56,24 @@ class PostsTableViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: Delegate Methods
+    func received(post: Post) {
+        posts.insert(post, at: 0)
+        setupPosts()
+    }
+    
+    
+    // MARK: Obj-C Methods
+    @objc func openNewPost() {
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        if let addVC = storyboard.instantiateViewController(withIdentifier: "newPostVC") as? AddNewPostViewController {
+            addVC.modalPresentationStyle = .pageSheet
+            addVC.delegate = self
+            // Add navigation controller to modal view, to add bar button items
+            let navController = UINavigationController(rootViewController: addVC)
+            present(navController, animated: true, completion: nil)
+        }
+    }
+    
 }

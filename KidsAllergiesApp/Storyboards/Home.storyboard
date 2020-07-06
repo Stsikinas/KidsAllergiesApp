@@ -57,6 +57,21 @@
             </objects>
             <point key="canvasLocation" x="1439.1304347826087" y="62.946428571428569"/>
         </scene>
+        <!--Add New Post View Controller-->
+        <scene sceneID="jTQ-ik-y3k">
+            <objects>
+                <viewController storyboardIdentifier="newPostVC" id="f0I-vz-BjR" customClass="AddNewPostViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UIN-Jg-Xu0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DGy-Uq-3Sl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wB0-fJ-nwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="63"/>
+        </scene>
         <!--Recipes Table View Controller-->
         <scene sceneID="Em3-Rh-IgO">
             <objects>

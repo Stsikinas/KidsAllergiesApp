@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 public struct Post {
-    var id: Int
     var postText: String
     var editor: String
     var commentsNum: Int

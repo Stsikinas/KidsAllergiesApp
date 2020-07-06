@@ -16,6 +16,7 @@
 		4641955224864A2200CC6E3E /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641955124864A2200CC6E3E /* TagButton.swift */; };
 		46420122246D780500A304C6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420121246D780500A304C6 /* TextUtils.swift */; };
 		46420124246D7E9600A304C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46420123246D7E9600A304C6 /* Extensions.swift */; };
+		46466C7124AC9BAF0066ACA4 /* AddNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46466C7024AC9BAF0066ACA4 /* AddNewPostViewController.swift */; };
 		464873FC2488F2AC005609C4 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */; };
 		4650AFE124727C8F00E95010 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AFE024727C8F00E95010 /* AppUtility.swift */; };
 		465C5DBF24659FA5000C24D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C5DBE24659FA5000C24D6 /* LoginViewController.swift */; };
@@ -40,6 +41,7 @@
 		46DE507E249A23F800DF962A /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507D249A23F800DF962A /* PostListViewModel.swift */; };
 		46DE5080249A29EB00DF962A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DE507F249A29EB00DF962A /* PostTableViewCell.swift */; };
 		46E1C64B24751612001B96C0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1C64A24751612001B96C0 /* UserViewModel.swift */; };
+		46E895A724ADC9C8000AEE2E /* AddNewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E895A624ADC9C8000AEE2E /* AddNewPostView.swift */; };
 		46ED59D8246C362400BF6A0F /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */; };
 		46EFAEBE247FED9C00EF670D /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */; };
 		46EFAEC0247FF02500EF670D /* TipListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAEBF247FF02500EF670D /* TipListViewModel.swift */; };
@@ -83,6 +85,7 @@
 		4641955124864A2200CC6E3E /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		46420121246D780500A304C6 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
 		46420123246D7E9600A304C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		46466C7024AC9BAF0066ACA4 /* AddNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPostViewController.swift; sourceTree = "<group>"; };
 		464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
 		4650AFE024727C8F00E95010 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		465C5DBE24659FA5000C24D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		46DE507D249A23F800DF962A /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		46DE507F249A29EB00DF962A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		46E1C64A24751612001B96C0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		46E895A624ADC9C8000AEE2E /* AddNewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPostView.swift; sourceTree = "<group>"; };
 		46ED59D7246C362400BF6A0F /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
 		46EFAEBD247FED9C00EF670D /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		46EFAEBF247FF02500EF670D /* TipListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipListViewModel.swift; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 		46CCDFBA2460328B0052B3E3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				46466C7024AC9BAF0066ACA4 /* AddNewPostViewController.swift */,
 				465C5DBE24659FA5000C24D6 /* LoginViewController.swift */,
 				46CCDFC42460530B0052B3E3 /* MainViewController.swift */,
 				463B57C3247FDBDB00D31C37 /* PostsTableViewController.swift */,
@@ -267,13 +272,14 @@
 		46CCDFBC2460329A0052B3E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				46E895A624ADC9C8000AEE2E /* AddNewPostView.swift */,
 				464873FB2488F2AC005609C4 /* AvatarTableViewCell.swift */,
 				46DE507F249A29EB00DF962A /* PostTableViewCell.swift */,
 				46FFB4AE249391CD0019E87A /* RecipeDetailView.swift */,
 				46F2F596248A1F27006019F1 /* RecipesTableViewCell.swift */,
 				4641955124864A2200CC6E3E /* TagButton.swift */,
-				46846B2D248129B300A931CB /* TipsTableViewCell.swift */,
 				4678376724A37A9900C0CE9D /* TipDetailView.swift */,
+				46846B2D248129B300A931CB /* TipsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -600,6 +606,8 @@
 				46F2F597248A1F27006019F1 /* RecipesTableViewCell.swift in Sources */,
 				46DE507E249A23F800DF962A /* PostListViewModel.swift in Sources */,
 				46392E6624767B7000586116 /* RegisterViewController.swift in Sources */,
+				46466C7124AC9BAF0066ACA4 /* AddNewPostViewController.swift in Sources */,
+				46E895A724ADC9C8000AEE2E /* AddNewPostView.swift in Sources */,
 				463B57C4247FDBDB00D31C37 /* PostsTableViewController.swift in Sources */,
 				46DE5080249A29EB00DF962A /* PostTableViewCell.swift in Sources */,
 				46420124246D7E9600A304C6 /* Extensions.swift in Sources */,
