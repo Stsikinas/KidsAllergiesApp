@@ -12,14 +12,13 @@ class TipsTableViewCell: UITableViewCell {
 
     lazy var textView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "tips_background")
         view.cardView(ofRadius: 12.0, withShadow: UIColor.gray)
         return view
     }()
     
     lazy var titleLabel: UILabel = {
        let label = UILabel()
-        label.textColor = .black
         label.font = UIFont(name: "AmericanTypewriter", size: 28.0)
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -27,7 +26,6 @@ class TipsTableViewCell: UITableViewCell {
     }()
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
         label.font = UIFont(name: "Avenir-Book", size: 16.0)
         label.numberOfLines = 3
          return label
