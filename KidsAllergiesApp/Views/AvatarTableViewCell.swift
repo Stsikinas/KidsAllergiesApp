@@ -24,8 +24,7 @@ class AvatarTableViewCell: UITableViewCell {
     }()
     lazy var userEmail: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "AmericanTypewriter-CondensedLight", size: 14.0)
-        label.textColor = .systemGray
+        label.font = UIFont(name: "AmericanTypewriter", size: 14.0)
         label.textAlignment = .left
         label.numberOfLines = 1
         return label
