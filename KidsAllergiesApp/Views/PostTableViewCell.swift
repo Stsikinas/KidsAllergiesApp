@@ -13,13 +13,12 @@ class PostTableViewCell: UITableViewCell, UITextFieldDelegate {
     // MARK: Subview Initializers
     lazy var postView: UIView = {
        let view = UIView()
-        view.backgroundColor = .lightBeige
+        view.backgroundColor = UIColor(named: "card_background")
         view.cardView(ofRadius: 12.0, withShadow: UIColor.gray)
         return view
     }()
     lazy var authorLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
         label.font = UIFont(name: "AmericanTypewriter", size: 14.0)
         return label
     }()
@@ -32,13 +31,21 @@ class PostTableViewCell: UITableViewCell, UITextFieldDelegate {
     }()
     lazy var favouriteButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
-        button.set(color: .darkGray, forImage: UIImage(named: "no_fav.png")!)
+        if isDarkModeEnabled {
+            button.set(color: .lightGray, forImage: UIImage(named: "no_fav.png")!)
+        } else {
+            button.set(color: .darkGray, forImage: UIImage(named: "no_fav.png")!)
+        }
         button.isEnabled = false
         return button
     }()
     lazy var favouriteLabel: UILabel = {
        let label = UILabel()
-        label.textColor = .darkGray
+        if isDarkModeEnabled {
+            label.textColor = .lightGray
+        } else {
+            label.textColor = .darkGray
+        }
         label.font = UIFont(name: "Avenir-Book", size: 13.0)
         return label
     }()
@@ -49,19 +56,26 @@ class PostTableViewCell: UITableViewCell, UITextFieldDelegate {
     }()
     lazy var commentButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
-        button.set(color: .darkGray, forImage: UIImage(named: "comments.png")!)
+        if isDarkModeEnabled {
+            button.set(color: .lightGray, forImage: UIImage(named: "no_fav.png")!)
+        } else {
+            button.set(color: .darkGray, forImage: UIImage(named: "no_fav.png")!)
+        }
         button.isEnabled = false
         return button
     }()
     lazy var commentLabel: UILabel = {
-       let label = UILabel()
-        label.textColor = .darkGray
+        let label = UILabel()
+        if isDarkModeEnabled {
+            label.textColor = .lightGray
+        } else {
+            label.textColor = .darkGray
+        }
         label.font = UIFont(name: "Avenir-Book", size: 13.0)
         return label
     }()
     lazy var postTextLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
         label.font = UIFont(name: "Avenir-Book", size: 16.0)
         label.numberOfLines = 3
          return label

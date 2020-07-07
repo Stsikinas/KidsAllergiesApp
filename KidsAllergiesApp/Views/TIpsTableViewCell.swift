@@ -12,7 +12,7 @@ class TipsTableViewCell: UITableViewCell {
 
     lazy var textView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(named: "tips_background")
+        view.backgroundColor = UIColor(named: "card_background")
         view.cardView(ofRadius: 12.0, withShadow: UIColor.gray)
         return view
     }()

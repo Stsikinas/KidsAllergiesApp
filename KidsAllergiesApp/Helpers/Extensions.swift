@@ -116,6 +116,13 @@ extension UIColor {
 // MARK: UIView
 extension UIView {
     
+    /// Check if dark mode is enabled
+    var isDarkModeEnabled : Bool {
+        get {
+            return traitCollection.userInterfaceStyle == .dark
+        }
+    }
+    
     func fadeIn(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: .curveEaseIn, animations: {
             self.alpha = 1.0

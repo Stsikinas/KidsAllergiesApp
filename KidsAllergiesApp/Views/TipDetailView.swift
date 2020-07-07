@@ -21,7 +21,7 @@ class TipDetailView: UIView {
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.alwaysBounceVertical = true
-        scrollView.backgroundColor = UIColor(named: "tips_background")
+        scrollView.backgroundColor = UIColor(named: "card_background")
         return scrollView
     }()
     lazy var titleLabel: UILabel = {
