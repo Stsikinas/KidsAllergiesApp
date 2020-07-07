@@ -71,7 +71,11 @@ class AddNewPostView: UIView, UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == UIColor.lightGray {
             textView.text = nil
-            textView.textColor = .black
+            if isDarkModeEnabled {
+                textView.textColor = .lightText
+            } else {
+                textView.textColor = .darkText
+            }
         }
     }
     

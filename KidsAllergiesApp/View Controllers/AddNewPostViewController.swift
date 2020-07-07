@@ -56,14 +56,5 @@ class AddNewPostViewController: UIViewController, textViewValueChangedDelegate {
     func textValueChanged(of textView: UITextView, textCount: Int) {
         postText = textView.text
         shareBtn.isEnabled = !textView.text.isEmpty && textCount <= wordCount
-        DispatchQueue.main.async {
-            if textCount > wordCount {
-                self.view.backgroundColor = .paleRed
-            } else {
-                self.view.backgroundColor = .white
-            }
-        }
     }
-    
-
 }

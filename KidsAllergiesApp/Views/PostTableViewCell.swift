@@ -77,7 +77,7 @@ class PostTableViewCell: UITableViewCell, UITextFieldDelegate {
     lazy var postTextLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Avenir-Book", size: 16.0)
-        label.numberOfLines = 3
+        label.numberOfLines = 5
          return label
     }()
     lazy var postCommentTextField: UITextField = {

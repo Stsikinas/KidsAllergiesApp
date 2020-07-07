@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // MARK: Misc Constants
-let wordCount: Int = 200
+let wordCount: Int = 150
 
 // MARK: Notification Constants
 
