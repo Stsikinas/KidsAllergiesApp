@@ -22,7 +22,7 @@ class RecipesTableViewController: UITableViewController, ClickedFavouriteDelegat
         setupTableViewProperties()
         tableView.register(RecipesTableViewCell.self, forCellReuseIdentifier: cellID)
         setupRecipesList()
-        
+        setupSearchController(with: "Search Recipes")
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -219,7 +219,20 @@ extension UIView {
 }
 
 // MARK: UITableViewController
-extension UITableViewController {
+extension UITableViewController: UISearchResultsUpdating {
+    
+    func setupSearchController(with placeholder: String) {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = placeholder
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
+    public func updateSearchResults(for searchController: UISearchController) {
+        // TODO
+    }
     
     func setupTableViewProperties() {
         tableView.separatorStyle = .none

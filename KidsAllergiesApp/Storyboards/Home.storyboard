@@ -96,9 +96,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="0Ab-E7-9Rr"/>
-                    <connections>
-                        <segue destination="u7c-ol-FXf" kind="show" identifier="showRecipe" id="o6c-Cv-INB"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zl-ZE-hbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +197,7 @@
         <!--Recipe View Controller-->
         <scene sceneID="uGw-jG-ZRj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="u7c-ol-FXf" customClass="RecipeViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeVC" modalPresentationStyle="fullScreen" id="u7c-ol-FXf" customClass="RecipeViewController" customModule="Kids_Allergies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gu-VX-EFZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
